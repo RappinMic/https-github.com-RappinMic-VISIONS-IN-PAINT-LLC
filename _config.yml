@@ -1,7 +1,10 @@
-title: Visions in Paint LLC
-description: Online Art Gallery & Shop
-baseurl: ""
-url: ""
+theme: jekyll-theme-artistic
 
-theme: minima
+# Site settings
+title: My Jekyll Site
+description: A site showcasing artistic themes
+baseurl: ""
+url: "https://yourdomain.com"
+
+# Build settings
 markdown: kramdown
