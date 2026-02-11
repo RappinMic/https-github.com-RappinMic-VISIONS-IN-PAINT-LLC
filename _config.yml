@@ -1,1 +1,7 @@
+title: Visions in Paint LLC
+description: Online Art Gallery & Shop
+baseurl: ""
+url: ""
 
+theme: minima
+markdown: kramdown
