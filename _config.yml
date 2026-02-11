@@ -6,6 +6,7 @@ url: "https://rappinmic.github.io"
 
 # Build settings
 markdown: kramdown
+theme: minima
 
 # Exclude files from build
 exclude:
