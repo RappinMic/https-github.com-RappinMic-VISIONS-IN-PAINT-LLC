@@ -80,8 +80,8 @@ header h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-weight: 900;
-  letter-spacing: -1px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -156,8 +156,8 @@ nav a:hover {
 .hero h2 {
   font-size: 3em;
   margin-bottom: 20px;
-  font-weight: 900;
-  letter-spacing: -1.5px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
   position: relative;
   z-index: 1;
 }
