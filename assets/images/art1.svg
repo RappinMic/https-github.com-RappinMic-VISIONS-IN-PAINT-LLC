@@ -1,13 +1,19 @@
 <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A855F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
     </linearGradient>
+    <filter id="blur1">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
   </defs>
   <rect width="400" height="400" fill="url(#grad1)"/>
-  <circle cx="200" cy="150" r="80" fill="rgba(255,255,255,0.3)"/>
-  <circle cx="150" cy="250" r="60" fill="rgba(255,255,255,0.2)"/>
-  <circle cx="280" cy="280" r="70" fill="rgba(255,255,255,0.25)"/>
-  <text x="200" y="370" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Abstract Dreams</text>
+  <!-- Abstract Expressionist brushstrokes -->
+  <ellipse cx="180" cy="120" rx="90" ry="110" fill="rgba(255,255,255,0.25)" transform="rotate(-20 180 120)" filter="url(#blur1)"/>
+  <ellipse cx="250" cy="200" rx="80" ry="100" fill="rgba(255,255,255,0.2)" transform="rotate(35 250 200)" filter="url(#blur1)"/>
+  <ellipse cx="140" cy="280" rx="95" ry="85" fill="rgba(255,255,255,0.3)" transform="rotate(-15 140 280)" filter="url(#blur1)"/>
+  <circle cx="320" cy="150" r="45" fill="rgba(255,255,255,0.15)" filter="url(#blur1)"/>
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="white" text-anchor="middle">Abstract Dreams</text>
 </svg>
