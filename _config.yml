@@ -4,11 +4,21 @@ description: Original artwork gallery showcasing stunning artistic pieces
 baseurl: ""
 url: "https://rappinmic.github.io"
 
+# Theme settings
+theme: minima
+
 # Build settings
 markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude files from build
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
+  - .bundle/
+  - README.md
