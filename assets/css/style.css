@@ -485,7 +485,7 @@ nav a:hover {
   width: 100%;
 }
 
-/* Decorative flourish under section title */
+/* Decorative flourish under section title - purely visual */
 .comments-section h2::after {
   content: '❦';
   display: block;
@@ -493,6 +493,12 @@ nav a:hover {
   color: var(--accent-color);
   font-size: 0.6em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  /* Screen readers will skip over this purely decorative element */
+  speak: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Success Page */
@@ -532,6 +538,7 @@ footer {
   position: relative;
 }
 
+/* Decorative element - purely visual, not announced to screen readers */
 footer::before {
   content: '※';
   display: block;
@@ -539,6 +546,12 @@ footer::before {
   font-size: 1.5em;
   color: var(--accent-color);
   text-shadow: 0 0 10px rgba(218, 165, 32, 0.5);
+  /* Screen readers will skip over this purely decorative element */
+  speak: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 footer p {
