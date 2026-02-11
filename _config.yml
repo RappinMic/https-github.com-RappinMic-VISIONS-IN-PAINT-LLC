@@ -1,10 +1,14 @@
-theme: jekyll-theme-artistic
-
 # Site settings
-title: My Jekyll Site
-description: A site showcasing artistic themes
+title: Visions in Paint LLC
+description: Original artwork gallery showcasing stunning artistic pieces
 baseurl: ""
-url: "https://yourdomain.com"
+url: "https://rappinmic.github.io"
 
 # Build settings
 markdown: kramdown
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
