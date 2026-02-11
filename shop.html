@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop - Visions in Paint LLC</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
 
@@ -31,7 +30,7 @@
         <h2>Abstract Dreams</h2>
         <p class="description">Original canvas painting featuring mesmerizing purple hues and geometric forms. 24" x 24"</p>
         <p class="price">$350.00</p>
-        <button class="btn" onclick="handleCheckout('price_1234ABSTRACT')">Purchase Now</button>
+        <button class="btn" onclick="handleCheckout('ABSTRACT')">Purchase Now</button>
       </div>
     </div>
 
@@ -41,7 +40,7 @@
         <h2>Geometric Harmony</h2>
         <p class="description">Vibrant geometric composition in pink and red gradients. Perfect modern statement piece. 30" x 30"</p>
         <p class="price">$425.00</p>
-        <button class="btn" onclick="handleCheckout('price_1234GEOMETRIC')">Purchase Now</button>
+        <button class="btn" onclick="handleCheckout('GEOMETRIC')">Purchase Now</button>
       </div>
     </div>
 
@@ -51,7 +50,7 @@
         <h2>Prismatic Vision</h2>
         <p class="description">Stunning triangular artwork in ocean blue tones. Brings calm and sophistication. 20" x 30"</p>
         <p class="price">$275.00</p>
-        <button class="btn" onclick="handleCheckout('price_1234PRISMATIC')">Purchase Now</button>
+        <button class="btn" onclick="handleCheckout('PRISMATIC')">Purchase Now</button>
       </div>
     </div>
 
@@ -61,7 +60,7 @@
         <h2>Flowing Energy</h2>
         <p class="description">Dynamic curves flow across warm gradients. Represents movement and vitality. 24" x 36"</p>
         <p class="price">$400.00</p>
-        <button class="btn" onclick="handleCheckout('price_1234FLOWING')">Purchase Now</button>
+        <button class="btn" onclick="handleCheckout('FLOWING')">Purchase Now</button>
       </div>
     </div>
 
@@ -71,7 +70,7 @@
         <h2>Celestial Rings</h2>
         <p class="description">Concentric circles in beautiful turquoise tones evoke cosmic harmony. 24" x 24"</p>
         <p class="price">$325.00</p>
-        <button class="btn" onclick="handleCheckout('price_1234CELESTIAL')">Purchase Now</button>
+        <button class="btn" onclick="handleCheckout('CELESTIAL')">Purchase Now</button>
       </div>
     </div>
 
@@ -81,7 +80,7 @@
         <h2>Modern Mosaic</h2>
         <p class="description">Contemporary rotated squares in vibrant purple and pink. Bold and beautiful. 30" x 30"</p>
         <p class="price">$450.00</p>
-        <button class="btn" onclick="handleCheckout('price_1234MOSAIC')">Purchase Now</button>
+        <button class="btn" onclick="handleCheckout('MOSAIC')">Purchase Now</button>
       </div>
     </div>
   </div>
@@ -102,18 +101,20 @@
         <li>For testing, you can use <a href="https://dashboard.stripe.com/test/dashboard" target="_blank">Stripe Test Mode</a></li>
       </ol>
 
-      <h3 style="color: var(--dark-color); margin-top: 20px;">Step 2: Create Products in Stripe</h3>
+      <h3 style="color: var(--dark-color); margin-top: 20px;">Step 2: Create Products & Payment Links in Stripe</h3>
       <ol>
         <li>Go to Products in your Stripe Dashboard</li>
         <li>Create a product for each artwork with pricing</li>
-        <li>Copy the Price ID (starts with <code>price_</code>)</li>
+        <li>Click "Create payment link" for each product</li>
+        <li>Copy the payment link URL (starts with <code>https://buy.stripe.com/test_</code> for test mode)</li>
       </ol>
 
       <h3 style="color: var(--dark-color); margin-top: 20px;">Step 3: Configure This Website</h3>
       <ol>
-        <li>Replace <code>YOUR_PUBLISHABLE_KEY</code> in the script below with your Stripe publishable key</li>
-        <li>Replace the <code>price_1234XXXXX</code> placeholders with your actual Price IDs</li>
-        <li>Set up your success and cancel URLs</li>
+        <li>Find the <code>STRIPE_PAYMENT_LINKS</code> object in the JavaScript below</li>
+        <li>Replace each placeholder URL with your actual Stripe Payment Link</li>
+        <li>Payment Links are the easiest way to integrate Stripe without a backend server</li>
+        <li>Configure success and cancel URLs in the Stripe Payment Link settings</li>
       </ol>
 
       <h3 style="color: var(--dark-color); margin-top: 20px;">Test Mode Credentials:</h3>
@@ -125,8 +126,13 @@
       </ul>
 
       <p style="margin-top: 20px; padding: 15px; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 5px;">
-        <strong>⚠️ Current Status:</strong> The Stripe integration is set up with placeholder keys. 
-        Replace the publishable key and price IDs below to activate real payment processing.
+        <strong>⚠️ Current Status:</strong> The Stripe integration uses placeholder Payment Links. 
+        Create Payment Links in your Stripe Dashboard and replace them in the JavaScript code below to activate real payment processing.
+      </p>
+      
+      <p style="margin-top: 15px; padding: 15px; background: #d1ecf1; border-left: 4px solid #17a2b8; border-radius: 5px;">
+        <strong>💡 Recommended:</strong> Use Stripe Payment Links for the easiest setup without needing a backend server. 
+        Each button will redirect to Stripe's hosted checkout page.
       </p>
     </div>
   </div>
@@ -138,61 +144,35 @@
 </footer>
 
 <script>
-  // Initialize Stripe with your publishable key
-  // Replace 'YOUR_PUBLISHABLE_KEY' with your actual Stripe publishable key
-  // For test mode, use a key that starts with 'pk_test_'
-  const stripe = Stripe('pk_test_51234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz');
+  // Stripe Payment Links Configuration
+  // Replace these placeholder URLs with your actual Stripe Payment Links
+  // Create Payment Links at: https://dashboard.stripe.com/test/payment-links
+  const STRIPE_PAYMENT_LINKS = {
+    'ABSTRACT': 'https://buy.stripe.com/test_00000000000000000000', // Replace with actual link
+    'GEOMETRIC': 'https://buy.stripe.com/test_00000000000000000001', // Replace with actual link
+    'PRISMATIC': 'https://buy.stripe.com/test_00000000000000000002', // Replace with actual link
+    'FLOWING': 'https://buy.stripe.com/test_00000000000000000003', // Replace with actual link
+    'CELESTIAL': 'https://buy.stripe.com/test_00000000000000000004', // Replace with actual link
+    'MOSAIC': 'https://buy.stripe.com/test_00000000000000000005', // Replace with actual link
+  };
 
-  function handleCheckout(priceId) {
-    // Show loading state
-    event.target.disabled = true;
-    event.target.textContent = 'Processing...';
-
-    // Create Checkout Session
-    fetch('https://api.stripe.com/v1/checkout/sessions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      // Note: In production, this should be handled by a server-side endpoint
-      // This is a simplified example for demonstration
-      body: new URLSearchParams({
-        'price': priceId,
-        'quantity': 1,
-        'success_url': window.location.origin + '/success.html',
-        'cancel_url': window.location.origin + '/shop.html',
-      })
-    })
-    .then(response => response.json())
-    .then(session => {
-      // Redirect to Checkout
-      return stripe.redirectToCheckout({ sessionId: session.id });
-    })
-    .then(result => {
-      if (result.error) {
-        alert(result.error.message);
-        event.target.disabled = false;
-        event.target.textContent = 'Purchase Now';
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      alert('Payment processing is not yet configured. Please set up your Stripe account and replace the API keys.');
-      event.target.disabled = false;
-      event.target.textContent = 'Purchase Now';
-    });
+  function handleCheckout(productKey) {
+    const paymentLink = STRIPE_PAYMENT_LINKS[productKey];
+    
+    if (!paymentLink || paymentLink.includes('00000000000000000000')) {
+      // Payment link not configured
+      alert('💳 Payment processing is not yet configured.\n\n' +
+            'To enable payments:\n' +
+            '1. Create a Stripe account at stripe.com\n' +
+            '2. Create products and Payment Links in your Stripe Dashboard\n' +
+            '3. Replace the placeholder URLs in the STRIPE_PAYMENT_LINKS object\n\n' +
+            'Payment Links are the easiest way to accept payments without a backend server!');
+      return;
+    }
+    
+    // Redirect to Stripe Payment Link
+    window.location.href = paymentLink;
   }
-
-  // Alternative: Use Stripe Payment Links (Easier Setup)
-  // Uncomment this function and update the onclick handlers to use it instead
-  /*
-  function handleCheckoutWithPaymentLink(url) {
-    window.location.href = url;
-  }
-  
-  // Then change button onclick to:
-  // onclick="handleCheckoutWithPaymentLink('https://buy.stripe.com/test_XXXXX')"
-  */
 </script>
 
 </body>
