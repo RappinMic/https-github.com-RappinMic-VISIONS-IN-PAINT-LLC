@@ -1,18 +1,99 @@
 # 🎨 Visions in Paint LLC
 
-A Jekyll-powered art gallery website with Stripe payments.
+A stunning artistic-themed website for showcasing and selling original artwork.
 
 ## 🚀 Features
-- Art gallery
-- Stripe payments
-- Static website
-- Mobile friendly
-- Hosted on GitHub Pages
+
+- **Visually Striking Gallery** - 6 unique artworks with vibrant gradient designs
+- **Stripe Payment Integration** - Secure payments using Stripe Payment Links
+- **Disqus Comments** - User feedback and engagement on gallery page
+- **Artistic & Vibrant Styling** - Modern CSS with gradients and smooth animations
+- **Responsive Design** - Looks great on all devices
+- **Static Website** - Fast loading with no backend required
+- **GitHub Pages Ready** - Easy deployment
+
+## 📸 Pages
+
+- **Home** (`index.html`) - Welcome page with featured artwork
+- **Gallery** (`gallery.html`) - Full art gallery with Disqus comments
+- **Shop** (`shop.html`) - Purchase artwork with Stripe integration
+- **Success** (`success.html`) - Payment confirmation page
 
 ## ⚙️ Setup
+
+### Quick Start (Static Site)
+
+Simply open `index.html` in a web browser or serve with any static file server:
+
+```bash
+# Using Python
+python3 -m http.server 8000
+
+# Using Node.js
+npx http-server
+
+# Using PHP
+php -S localhost:8000
+```
+
+Then visit `http://localhost:8000` in your browser.
+
+### Jekyll Setup (Optional)
 
 ```bash
 git clone https://github.com/yourusername/visions-in-paint.git
 cd visions-in-paint
 bundle install
 bundle exec jekyll serve
+```
+
+## 💳 Stripe Integration Setup
+
+1. Create a [Stripe account](https://stripe.com)
+2. Go to Products → Create products for each artwork
+3. Create Payment Links for each product
+4. Update the `STRIPE_PAYMENT_LINKS` object in `shop.html` with your links
+5. Test with Stripe test card: `4242 4242 4242 4242`
+
+See detailed instructions in `shop.html`.
+
+## 💬 Disqus Comments Setup
+
+1. Create a [Disqus account](https://disqus.com)
+2. Register your site and get a shortname
+3. Replace `'visions-in-paint'` in `gallery.html` with your shortname
+
+See detailed instructions in `gallery.html`.
+
+## 🎨 Customization
+
+- **Colors**: Edit CSS variables in `assets/css/style.css`
+- **Images**: Replace SVG files in `assets/images/`
+- **Content**: Update HTML files with your artwork details
+
+## 📁 Project Structure
+
+```
+.
+├── index.html              # Home page
+├── gallery.html            # Gallery with comments
+├── shop.html               # Shop with Stripe
+├── success.html            # Payment success page
+├── assets/
+│   ├── css/
+│   │   └── style.css      # Artistic styling
+│   └── images/
+│       ├── art1.svg       # Artwork images
+│       ├── art2.svg
+│       └── ...
+├── _config.yml            # Jekyll config (optional)
+└── README.md
+```
+
+## 🌟 Live Demo
+
+Visit the live site: [Your GitHub Pages URL]
+
+## 📝 License
+
+© 2024 Visions in Paint LLC. All rights reserved.

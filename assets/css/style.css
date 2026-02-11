@@ -1,0 +1,335 @@
+/* Visions In Paint LLC - Artistic Theme Stylesheet */
+
+:root {
+  --primary-color: #FF6B6B;
+  --secondary-color: #4ECDC4;
+  --accent-color: #FFE66D;
+  --dark-color: #2C3E50;
+  --light-color: #ECF0F1;
+  --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --shadow: 0 10px 40px rgba(0,0,0,0.1);
+  --shadow-hover: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background: rgba(44, 62, 80, 0.95);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  background: var(--gradient-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 600;
+}
+
+nav a:hover {
+  background: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+/* Main Content Container */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--gradient-1);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Button Styles */
+.btn {
+  background: var(--gradient-2);
+  color: white;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-secondary {
+  background: var(--gradient-3);
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item-info {
+  padding: 20px;
+  background: white;
+}
+
+.gallery-item-info h3 {
+  color: var(--dark-color);
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.gallery-item-info p {
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* Product Cards */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 25px;
+}
+
+.product h2 {
+  color: var(--dark-color);
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.product .price {
+  font-size: 2em;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.product .description {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 0.95em;
+}
+
+/* Comments Section */
+.comments-section {
+  margin-top: 60px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.comments-section h2 {
+  text-align: center;
+  color: var(--dark-color);
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+/* Success Page */
+.success-container {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.success-container h1 {
+  font-size: 3em;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.success-container p {
+  font-size: 1.3em;
+  color: var(--dark-color);
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(44, 62, 80, 0.95);
+  color: white;
+  margin-top: 60px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  
+  nav a {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+  }
+  
+  .hero h2 {
+    font-size: 1.8em;
+  }
+  
+  .hero p {
+    font-size: 1.1em;
+  }
+  
+  .gallery-grid,
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-item,
+.product {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Stripe Button Override */
+.stripe-button-el {
+  display: none !important;
+}
+
+.stripe-button-el span {
+  background: var(--gradient-2) !important;
+  border-radius: 30px !important;
+  padding: 15px 40px !important;
+  font-size: 1.1em !important;
+}
