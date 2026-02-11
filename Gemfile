@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.4"
-gem "jekyll-theme-artistic"
+# Use github-pages gem for GitHub Pages compatibility
+gem "github-pages", group: :jekyll_plugins
 
-# If you have any additional Jekyll plugins, add them here
-# gem "jekyll-feed"
-# gem "jekyll-seo-tag"
+# Additional Jekyll plugins
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
