@@ -1,15 +1,25 @@
 # Site settings
 title: Visions in Paint LLC
 description: Original artwork gallery showcasing stunning artistic pieces
-baseurl: ""
+baseurl: "/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC"
 url: "https://rappinmic.github.io"
+
+# Theme settings
+theme: minima
 
 # Build settings
 markdown: kramdown
 theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude files from build
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
+  - .bundle/
+  - README.md
