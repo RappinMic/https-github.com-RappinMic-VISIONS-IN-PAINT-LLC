@@ -29,6 +29,7 @@ layout: none
   <div class="products-grid">
     <div class="product">
       <img src="{{ site.baseurl }}/assets/images/art1.svg" alt="Abstract Dreams">
+      <img src="{{ '/assets/images/art1.svg' | relative_url }}" alt="Abstract Dreams">
       <div class="product-info">
         <h2>Abstract Dreams</h2>
         <p class="description">Original canvas painting featuring mesmerizing purple hues and geometric forms. 24" x 24"</p>
@@ -69,6 +70,7 @@ layout: none
 
     <div class="product">
       <img src="{{ site.baseurl }}/assets/images/art5.svg" alt="Celestial Rings">
+      <img src="{{ '/assets/images/art5.svg' | relative_url }}" alt="Celestial Rings">
       <div class="product-info">
         <h2>Celestial Rings</h2>
         <p class="description">Concentric circles in beautiful turquoise tones evoke cosmic harmony. 24" x 24"</p>
@@ -79,6 +81,7 @@ layout: none
 
     <div class="product">
       <img src="{{ site.baseurl }}/assets/images/art6.svg" alt="Modern Mosaic">
+      <img src="{{ '/assets/images/art6.svg' | relative_url }}" alt="Modern Mosaic">
       <div class="product-info">
         <h2>Modern Mosaic</h2>
         <p class="description">Contemporary rotated squares in vibrant purple and pink. Bold and beautiful. 30" x 30"</p>
@@ -91,6 +94,8 @@ layout: none
   <div style="text-align: center; margin: 40px 0;">
     <a class="btn btn-secondary" href="{{ site.baseurl }}/gallery.html">View Gallery</a>
     <a class="btn btn-secondary" href="{{ site.baseurl }}/index.html">Back Home</a>
+    <a class="btn btn-secondary" href="{{ '/gallery.html' | relative_url }}">View Gallery</a>
+    <a class="btn btn-secondary" href="{{ '/' | relative_url }}">Back Home</a>
   </div>
 
   <!-- Stripe Setup Instructions -->
@@ -141,11 +146,6 @@ layout: none
   </div>
 </div>
 
-<footer>
-  <p>&copy; 2024 Visions in Paint LLC. All rights reserved.</p>
-  <p>Secure payments powered by Stripe</p>
-</footer>
-
 <script>
   // Stripe Payment Links Configuration
   // Replace these placeholder URLs with your actual Stripe Payment Links
@@ -177,6 +177,3 @@ layout: none
     window.location.href = paymentLink;
   }
 </script>
-
-</body>
-</html>

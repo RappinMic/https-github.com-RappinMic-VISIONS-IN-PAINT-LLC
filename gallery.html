@@ -1,24 +1,7 @@
 ---
-layout: none
+layout: default
+title: Gallery - Visions in Paint LLC
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery - Visions in Paint LLC</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-</head>
-<body>
-
-<header>
-  <h1>🎨 Visions in Paint LLC</h1>
-  <nav>
-    <a href="{{ site.baseurl }}/index.html">Home</a>
-    <a href="{{ site.baseurl }}/gallery.html">Gallery</a>
-    <a href="{{ site.baseurl }}/shop.html">Shop</a>
-  </nav>
-</header>
 
 <div class="container">
   <div class="hero">
@@ -28,7 +11,7 @@ layout: none
 
   <div class="gallery-grid">
     <div class="gallery-item">
-      <img src="{{ site.baseurl }}/assets/images/art1.svg" alt="Abstract Dreams">
+      <img src="{{ '/assets/images/art1.svg' | relative_url }}" alt="Abstract Dreams">
       <div class="gallery-item-info">
         <h3>Abstract Dreams</h3>
         <p>A mesmerizing blend of purple hues and geometric forms that evoke a sense of wonder and tranquility.</p>
@@ -36,7 +19,7 @@ layout: none
     </div>
     
     <div class="gallery-item">
-      <img src="{{ site.baseurl }}/assets/images/art2.svg" alt="Geometric Harmony">
+      <img src="{{ '/assets/images/art2.svg' | relative_url }}" alt="Geometric Harmony">
       <div class="gallery-item-info">
         <h3>Geometric Harmony</h3>
         <p>Bold rectangular shapes dancing in perfect synchrony, creating a vibrant pink masterpiece.</p>
@@ -44,7 +27,7 @@ layout: none
     </div>
     
     <div class="gallery-item">
-      <img src="{{ site.baseurl }}/assets/images/art3.svg" alt="Prismatic Vision">
+      <img src="{{ '/assets/images/art3.svg' | relative_url }}" alt="Prismatic Vision">
       <div class="gallery-item-info">
         <h3>Prismatic Vision</h3>
         <p>Ethereal triangular composition in stunning ocean tones, representing clarity and depth.</p>
@@ -52,7 +35,7 @@ layout: none
     </div>
 
     <div class="gallery-item">
-      <img src="{{ site.baseurl }}/assets/images/art4.svg" alt="Flowing Energy">
+      <img src="{{ '/assets/images/art4.svg' | relative_url }}" alt="Flowing Energy">
       <div class="gallery-item-info">
         <h3>Flowing Energy</h3>
         <p>Graceful curves flow across warm sunset gradients, embodying movement and vitality.</p>
@@ -60,7 +43,7 @@ layout: none
     </div>
 
     <div class="gallery-item">
-      <img src="{{ site.baseurl }}/assets/images/art5.svg" alt="Celestial Rings">
+      <img src="{{ '/assets/images/art5.svg' | relative_url }}" alt="Celestial Rings">
       <div class="gallery-item-info">
         <h3>Celestial Rings</h3>
         <p>Concentric circles in turquoise tones evoke cosmic harmony and eternal balance.</p>
@@ -68,7 +51,7 @@ layout: none
     </div>
 
     <div class="gallery-item">
-      <img src="{{ site.baseurl }}/assets/images/art6.svg" alt="Modern Mosaic">
+      <img src="{{ '/assets/images/art6.svg' | relative_url }}" alt="Modern Mosaic">
       <div class="gallery-item-info">
         <h3>Modern Mosaic</h3>
         <p>Rotated squares create a dynamic mosaic in vibrant purple and pink gradients.</p>
@@ -77,8 +60,8 @@ layout: none
   </div>
 
   <div style="text-align: center; margin: 40px 0;">
-    <a class="btn" href="shop.html">Purchase Artwork</a>
-    <a class="btn btn-secondary" href="index.html">Back Home</a>
+    <a class="btn" href="{{ '/shop.html' | relative_url }}">Purchase Artwork</a>
+    <a class="btn btn-secondary" href="{{ '/' | relative_url }}">Back Home</a>
   </div>
 
   <!-- Disqus Comments Section -->
@@ -121,12 +104,4 @@ layout: none
   </div>
 </div>
 
-<footer>
-  <p>&copy; 2024 Visions in Paint LLC. All rights reserved.</p>
-  <p>Original artwork created with passion and vision</p>
-</footer>
-
 <script id="dsq-count-scr" src="//visions-in-paint.disqus.com/count.js" async></script>
-
-</body>
-</html>
