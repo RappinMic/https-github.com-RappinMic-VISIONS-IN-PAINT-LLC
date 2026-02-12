@@ -1,32 +1,24 @@
- name: Jekyll site CI
+# Site settings
+title: Visions in Paint LLC
+description: Original artwork gallery showcasing stunning artistic pieces
+baseurl: ""
+url: "https://rappinmic.github.io"
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+# Theme settings
+theme: minima
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# Build settings
+markdown: kramdown
 
-    steps:
-    - name: Check out the repository
-      uses: actions/checkout@v4
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
-    # Added debug step to inspect directory and permissions
-    - name: Debug workspace
-      run: |
-        ls -la
-        pwd
-        echo "Checking files..."
-
-    # Build the Jekyll site inside the Docker container
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-          -v ${{ github.workspace }}:/srv/jekyll \
-          -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "
-            chmod -R 777 /srv/jekyll &&
-            jekyll build --future --trace"
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - README.md
