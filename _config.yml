@@ -9,6 +9,7 @@ theme: minima
 
 # Build settings
 markdown: kramdown
+theme: minima
 
 # Plugins
 plugins:
