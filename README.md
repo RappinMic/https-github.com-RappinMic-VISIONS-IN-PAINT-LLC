@@ -1,49 +1,53 @@
 # 🎨 Visions in Paint LLC
 
-A stunning artistic-themed website for showcasing and selling original artwork, inspired by the great masters of Renaissance and Baroque art including Leonardo da Vinci, Rembrandt, and other classical painters.
+A stunning millennial art-themed website for showcasing and selling original artwork, featuring modern artistic trends blended with clean, functional design.
 
-## 🖼️ Artistic Design Philosophy
+## 🖼️ Millennial Art Design Philosophy
 
-This website embodies the timeless elegance of Renaissance and Baroque art masters while maintaining modern web usability. The design incorporates:
+This website embodies contemporary millennial aesthetics while maintaining modern web usability. The design incorporates:
 
-### **Leonardo da Vinci & Rembrandt Influences**
-- **Chiaroscuro Technique**: Dramatic interplay of light and shadow creates depth and dimension throughout the site
-- **Color Theory**: Warm, rich earth tones inspired by Renaissance palettes (siennas, ochres, umbers, and golds)
-- **Golden Ratio**: Layout proportions and spacing follow classical compositional principles
-- **Sfumato Effect**: Subtle gradients and soft transitions create atmospheric depth
+### **Modern Millennial Influences**
+- **Pastel Color Palette**: Soft, trendy colors including blush pink, mint green, coral, and lavender with bold electric blue and lime accents
+- **Hand-drawn Typography**: Brushstroke-style fonts (Caveat Brush, Kalam) mixed with clean sans-serif (Poppins, Inter)
+- **Instagram Aesthetic**: Selfie-inspired frames, polaroid-style overlays, and social media-inspired design elements
+- **Abstract Doodles**: Playful, modern geometric shapes and patterns throughout
 
-### **Classical Typography**
-- **Playfair Display**: Elegant serif headings reminiscent of classical inscriptions
-- **Cormorant Garamond**: Refined body text with Renaissance character
-- **Cinzel**: Roman-inspired font for navigation and buttons, evoking ancient elegance
+### **Typography**
+- **Caveat Brush & Kalam**: Hand-drawn, brushstroke-style fonts for headings and artistic elements
+- **Poppins & Inter**: Modern, clean sans-serif fonts for body text and navigation
+- Perfect blend of artistic expression and readability
 
-### **Renaissance Color Palette**
-- Deep umber shadows (#2C1810) - Rembrandt's signature darkness
-- Sienna earth tones (#8B4513) - da Vinci's natural pigments
-- Warm ochre (#CD853F) - Classical warmth
-- Renaissance gold (#DAA520) - Illuminated manuscript accents
-- Antique canvas (#F5E6D3) - Aged parchment background
+### **Millennial Color Palette**
+- Blush pink (#FFB6C1) - Primary pastel tone
+- Mint green (#B2E0D8) - Secondary pastel tone
+- Coral (#FF7F66) - Warm accent color
+- Lavender (#E6E6FA) - Soft highlight color
+- Electric blue (#00D9FF) - Bold contrast accent
+- Lime (#D4FF00) - Energetic highlight
+- Modern dark gray (#2D2D2D) - Clean text color
 
 ### **Design Elements**
-- Ornamental borders inspired by Renaissance frames
-- Canvas texture overlays for authentic artistic feel
-- Vignette effects creating focused viewing areas
-- Decorative flourishes and classical dividers
-- Layered shadows for dimensional depth
+- Selfie-inspired corner brackets and camera emoji accents
+- Instagram-like polaroid frames with soft shadows
+- Abstract doodle patterns and geometric shapes
+- Subtle brush textures and digital pattern overlays
+- Smooth fade-in animations and hover effects
+- Shimmer effects on gallery items
+- Clean, rounded buttons with gradient fills
 
 ## 🚀 Features
 
-- **Visually Striking Gallery** - 6 unique artworks with Renaissance-inspired presentation
-- **Classical Design Aesthetics** - Influenced by Leonardo da Vinci, Rembrandt, and Baroque masters
-- **Chiaroscuro Effects** - Dramatic light and shadow play throughout the design
-- **Elegant Typography** - Classical serif fonts (Playfair Display, Cormorant Garamond, Cinzel)
-- **Rich Color Palette** - Warm earth tones, siennas, ochres, and Renaissance golds
-- **Canvas Textures** - Subtle overlays creating authentic artistic atmosphere
-- **Golden Ratio Layouts** - Classical compositional principles in design
-- **Ornamental Frames** - Gallery items feature Renaissance-style borders
+- **Visually Striking Gallery** - 6 unique artworks with millennial-inspired presentation
+- **Modern Millennial Aesthetics** - Pastel colors, hand-drawn fonts, and Instagram-like design
+- **Smooth Animations** - Fade-in effects, hover pops, and shimmer animations on gallery items
+- **Hand-drawn Typography** - Brushstroke fonts (Caveat Brush, Kalam) mixed with clean sans-serif (Poppins, Inter)
+- **Pastel Color Palette** - Blush pink, mint green, coral, lavender with electric blue and lime accents
+- **Instagram-Inspired Design** - Selfie frames, polaroid overlays, and social media aesthetics
+- **Abstract Doodles** - Playful geometric shapes and modern patterns throughout
+- **Responsive Design** - Seamless viewing on mobile, tablet, and desktop devices
+- **Smooth Scroll Effects** - Enhanced user experience with smooth scrolling
 - **Stripe Payment Integration** - Secure payments using Stripe Payment Links
 - **Disqus Comments** - User feedback and engagement on gallery page
-- **Responsive Design** - Looks elegant on all devices (desktop, tablet, mobile)
 - **Cross-Browser Compatible** - Works seamlessly across all modern browsers
 - **Static Website** - Fast loading with no backend required
 - **GitHub Pages Ready** - Easy deployment
@@ -104,21 +108,32 @@ See detailed instructions in `gallery.html`.
 ## 🎨 Customization
 
 ### Colors
-Edit CSS variables in `assets/css/style.css` to customize the Renaissance color palette:
-- `--primary-color`: Sienna earth tone
-- `--secondary-color`: Warm ochre
-- `--accent-color`: Renaissance gold
-- `--dark-color`: Deep umber (Rembrandt's shadows)
-- `--light-color`: Antique canvas/parchment
+Edit CSS variables in `assets/css/style.css` to customize the millennial color palette:
+- `--blush-pink`: Primary pastel tone (#FFB6C1)
+- `--mint-green`: Secondary pastel tone (#B2E0D8)
+- `--coral`: Warm accent color (#FF7F66)
+- `--lavender`: Soft highlight color (#E6E6FA)
+- `--electric-blue`: Bold contrast accent (#00D9FF)
+- `--lime`: Energetic highlight (#D4FF00)
 
 ### Typography
-The site uses three classical font families:
-- **Playfair Display**: Elegant headings with Italian Renaissance character
-- **Cormorant Garamond**: Refined body text, inspired by Claude Garamond
-- **Cinzel**: Navigation and buttons, based on Roman inscriptions
+The site uses two font families for the millennial aesthetic:
+- **Caveat Brush & Kalam**: Hand-drawn, brushstroke-style fonts for artistic headings
+- **Poppins & Inter**: Modern, clean sans-serif for body text and navigation
+
+### Animations
+All animations are optimized for performance:
+- **Fade-in**: Gallery items fade in with staggered delays
+- **Hover Pop**: Gallery items scale up and shimmer on hover
+- **Smooth Scroll**: Enhanced scrolling experience
+- **Shimmer Effect**: Continuous shimmer animation on hover
 
 ### Images
-Replace SVG files in `assets/images/` with your own artwork
+Replace SVG files in `assets/images/` with your own artwork. Current SVGs feature:
+- Pastel gradient backgrounds
+- Selfie-inspired corner frames
+- Abstract doodle elements
+- Polaroid-style overlays
 
 ### Content
 Update HTML files with your artwork details and descriptions
