@@ -5,11 +5,11 @@ baseurl: "/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC"
 url: "https://rappinmic.github.io"
 
 # Theme settings
-theme: minima
+theme: millenial
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: millenial
 
 # Plugins
 plugins:
