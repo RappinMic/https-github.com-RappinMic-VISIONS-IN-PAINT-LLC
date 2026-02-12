@@ -1,13 +1,33 @@
 <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1">
+        <animate attributeName="stop-color" values="#f093fb;#FFE74C;#f093fb" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1">
+        <animate attributeName="stop-color" values="#f5576c;#FF6B35;#f5576c" dur="5s" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   <rect width="400" height="400" fill="url(#grad2)"/>
-  <rect x="50" y="50" width="120" height="120" fill="rgba(255,255,255,0.3)" rx="10"/>
-  <rect x="220" y="80" width="140" height="140" fill="rgba(255,255,255,0.2)" rx="10"/>
-  <rect x="100" y="230" width="200" height="120" fill="rgba(255,255,255,0.25)" rx="10"/>
-  <text x="200" y="370" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Geometric Harmony</text>
+  <rect x="50" y="50" width="120" height="120" fill="rgba(255,255,255,0.3)" rx="10" filter="url(#glow2)">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 110 110" to="5 110 110" dur="4s" repeatCount="indefinite" additive="sum"/>
+  </rect>
+  <rect x="220" y="80" width="140" height="140" fill="rgba(255,255,255,0.2)" rx="10" filter="url(#glow2)">
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 290 150" to="-5 290 150" dur="5s" repeatCount="indefinite" additive="sum"/>
+  </rect>
+  <rect x="100" y="230" width="200" height="120" fill="rgba(255,255,255,0.25)" rx="10" filter="url(#glow2)">
+    <animate attributeName="opacity" values="0.25;0.45;0.25" dur="3.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="scale" from="1" to="1.05" dur="4s" repeatCount="indefinite" additive="sum"/>
+  </rect>
+  <text x="200" y="370" font-family="Arial" font-size="24" fill="white" text-anchor="middle" filter="url(#glow2)">Geometric Harmony</text>
 </svg>
