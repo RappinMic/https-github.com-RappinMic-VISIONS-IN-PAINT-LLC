@@ -159,7 +159,7 @@ Update HTML files with your artwork details and descriptions
 
 ## 🌟 Live Demo
 
-Visit the live site: [Your GitHub Pages URL]
+Visit the live site: [https://rappinmic.github.io/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC/](https://rappinmic.github.io/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC/)
 
 ## 📝 License
 
