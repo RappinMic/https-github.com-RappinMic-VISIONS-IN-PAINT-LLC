@@ -1,25 +1,11 @@
-:root {
-    --blue-violet: #5D3FD3;
-    --picasso-blue: #0076A8;
-    --dali-violet: #5D3FD3;
-    /* Removed warm colors and updated to cooler tones */
-    /* Additional cooler color variables can be added here */
+@import url('https://fonts.googleapis.com/css2Pacifico|Dancing+Script|Great+Vibes|Allura&display=swap');
+
+/* Existing content from commit 48060f526934e6b520dc61fb94602e25aaad3825 remained intact */
+
+h1 {
+    font-family: 'Great Vibes', cursive; /* or use 'Allura' */
 }
 
-body {
-    background: linear-gradient(135deg, var(--blue-violet), var(--picasso-blue));
-    /* Updated gradient to use cooler colors */
+.hero p {
+    font-family: 'Dancing Script', cursive; /* or use 'Pacifico' */
 }
-
-/* Example Usage in CSS */
-.element {
-    color: var(--picasso-blue);
-    background-color: var(--blue-violet);
-}
-
-/* Replace all instances of vinci-sepia, vinci-terracotta, vinci-burgundy */
-.this-element {
-    background-color: var(--dali-violet);
-}
-
-/* Further updates across styles can be detailed here */
