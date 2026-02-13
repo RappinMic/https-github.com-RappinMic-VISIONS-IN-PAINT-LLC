@@ -4,7 +4,19 @@ source "https://rubygems.org"
 gem "github-pages", "~> 231", group: :jekyll_plugins
 
 # Minima theme
--# Minima theme
+source "https://rubygems.org"
+
+# GitHub Pages gem - includes Jekyll and compatible versions
+gem "github-pages", "~> 231", group: :jekyll_plugins
+
+# Theme (choose one of the options below)
+gem "minima", "~> 2.5"  # or gem "jekyll-theme-minimal"
+
+# Jekyll plugins
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-seo-tag", "~> 2.6"
+end
 -gem "millenial", "~> 2.5"
 +# Millennial theme
 +gem "jekyll-theme-millennial"
