@@ -1,51 +1,53 @@
 # 🎨 Visions in Paint LLC
 
-A stunning millennial art-themed website for showcasing and selling original artwork, featuring modern artistic trends blended with clean, functional design.
+A stunning artistic-themed website for showcasing and selling original artwork, featuring influences from the great masters: Picasso, Salvador Dalí, and Leonardo da Vinci.
 
-## 🖼️ Millennial Art Design Philosophy
+## 🖼️ Artistic Design Philosophy
 
-This website embodies contemporary millennial aesthetics while maintaining modern web usability. The design incorporates:
+This website embodies the essence of three legendary artists while maintaining modern web usability. The design incorporates:
 
-### **Modern Millennial Influences**
-- **Pastel Color Palette**: Soft, trendy colors including blush pink, mint green, coral, and lavender with bold electric blue and lime accents
-- **Hand-drawn Typography**: Brushstroke-style fonts (Caveat Brush, Kalam) mixed with clean sans-serif (Poppins, Inter)
-- **Instagram Aesthetic**: Selfie-inspired frames, polaroid-style overlays, and social media-inspired design elements
-- **Abstract Doodles**: Playful, modern geometric shapes and patterns throughout
+### **Master Artist Influences**
+- **Picasso**: Bold, vibrant colors (cubist blues, yellows, reds) with geometric shapes and patterns
+- **Salvador Dalí**: Surreal and dreamlike elements with melting effects and mysterious gradients
+- **Leonardo da Vinci**: Classical elegance, symmetry, and the golden ratio (1.618) in proportions
 
 ### **Typography**
-- **Caveat Brush & Kalam**: Hand-drawn, brushstroke-style fonts for headings and artistic elements
-- **Poppins & Inter**: Modern, clean sans-serif fonts for body text and navigation
-- Perfect blend of artistic expression and readability
+- **Cinzel & Playfair Display**: Classical serif fonts for da Vinci's Renaissance elegance
+- **Cormorant Garamond**: Sophisticated serif for body text with artistic flair
+- **Montserrat & Bebas Neue**: Bold geometric fonts for Picasso-inspired headers
+- Perfect blend of classical refinement and modern boldness
 
-### **Millennial Color Palette**
-- Blush pink (#FFB6C1) - Primary pastel tone
-- Mint green (#B2E0D8) - Secondary pastel tone
-- Coral (#FF7F66) - Warm accent color
-- Lavender (#E6E6FA) - Soft highlight color
-- Electric blue (#00D9FF) - Bold contrast accent
-- Lime (#D4FF00) - Energetic highlight
-- Modern dark gray (#2D2D2D) - Clean text color
+### **Artistic Color Palette**
+- Picasso Blue (#0E4C92) - Bold primary tone
+- Dalí Gold (#D4AF37) - Surreal accent color
+- Picasso Red (#D71920) - Vibrant emphasis
+- Vinci Sepia (#704214) - Classical depth
+- Picasso Yellow (#FDB827) - Energetic highlight
+- Dalí Violet (#9B59B6) - Dreamlike mystery
+- Vinci Ivory (#FFFFF0) - Classical elegance
 
 ### **Design Elements**
-- Selfie-inspired corner brackets and camera emoji accents
-- Instagram-like polaroid frames with soft shadows
-- Abstract doodle patterns and geometric shapes
-- Subtle brush textures and digital pattern overlays
-- Smooth fade-in animations and hover effects
-- Shimmer effects on gallery items
-- Clean, rounded buttons with gradient fills
+- Geometric patterns inspired by Picasso's Cubism
+- Surreal melting effects and dreamlike animations from Dalí
+- Classical symmetry and golden ratio proportions from da Vinci
+- Bold geometric borders with vibrant artistic gradients
+- Dramatic shadows and depth for artistic dimension
+- Smooth transformations with perspective effects
+- Renaissance-inspired background textures
+- Classical frame overlays on gallery items
 
 ## 🚀 Features
 
-- **Visually Striking Gallery** - 6 unique artworks with millennial-inspired presentation
-- **Modern Millennial Aesthetics** - Pastel colors, hand-drawn fonts, and Instagram-like design
-- **Smooth Animations** - Fade-in effects, hover pops, and shimmer animations on gallery items
-- **Hand-drawn Typography** - Brushstroke fonts (Caveat Brush, Kalam) mixed with clean sans-serif (Poppins, Inter)
-- **Pastel Color Palette** - Blush pink, mint green, coral, lavender with electric blue and lime accents
-- **Instagram-Inspired Design** - Selfie frames, polaroid overlays, and social media aesthetics
-- **Abstract Doodles** - Playful geometric shapes and modern patterns throughout
+- **Visually Striking Gallery** - 6 unique artworks with artistic presentation
+- **Master Artist Aesthetics** - Picasso, Dalí, and da Vinci influences throughout
+- **Dramatic Animations** - Surreal melting effects, geometric rotations, and golden ratio transitions
+- **Classical Typography** - Elegant serif fonts mixed with bold geometric typefaces
+- **Bold Artistic Colors** - Cubist blues, surreal golds, and Renaissance earth tones
+- **Geometric Patterns** - Picasso-inspired cubist shapes and angular designs
+- **Surreal Effects** - Dalí-inspired dreamlike animations and morphing shapes
+- **Golden Ratio Layout** - da Vinci's classical proportions and symmetry
 - **Responsive Design** - Seamless viewing on mobile, tablet, and desktop devices
-- **Smooth Scroll Effects** - Enhanced user experience with smooth scrolling
+- **Smooth Perspective Effects** - Enhanced 3D transformations
 - **Stripe Payment Integration** - Secure payments using Stripe Payment Links
 - **Disqus Comments** - User feedback and engagement on gallery page
 - **Cross-Browser Compatible** - Works seamlessly across all modern browsers
@@ -108,32 +110,34 @@ See detailed instructions in `gallery.html`.
 ## 🎨 Customization
 
 ### Colors
-Edit CSS variables in `assets/css/style.css` to customize the millennial color palette:
-- `--blush-pink`: Primary pastel tone (#FFB6C1)
-- `--mint-green`: Secondary pastel tone (#B2E0D8)
-- `--coral`: Warm accent color (#FF7F66)
-- `--lavender`: Soft highlight color (#E6E6FA)
-- `--electric-blue`: Bold contrast accent (#00D9FF)
-- `--lime`: Energetic highlight (#D4FF00)
+Edit CSS variables in `assets/css/style.css` to customize the artistic color palette:
+- `--picasso-blue`: Bold primary tone (#0E4C92)
+- `--dali-gold`: Surreal accent color (#D4AF37)
+- `--picasso-red`: Vibrant emphasis (#D71920)
+- `--vinci-sepia`: Classical depth (#704214)
+- `--picasso-yellow`: Energetic highlight (#FDB827)
+- `--dali-violet`: Dreamlike mystery (#9B59B6)
 
 ### Typography
-The site uses two font families for the millennial aesthetic:
-- **Caveat Brush & Kalam**: Hand-drawn, brushstroke-style fonts for artistic headings
-- **Poppins & Inter**: Modern, clean sans-serif for body text and navigation
+The site uses three font families for the artistic aesthetic:
+- **Cinzel & Playfair Display**: Classical elegance for da Vinci influence
+- **Cormorant Garamond**: Refined serif for body text
+- **Montserrat & Bebas Neue**: Bold geometric fonts for Picasso-inspired elements
 
 ### Animations
 All animations are optimized for performance:
-- **Fade-in**: Gallery items fade in with staggered delays
-- **Hover Pop**: Gallery items scale up and shimmer on hover
-- **Smooth Scroll**: Enhanced scrolling experience
-- **Shimmer Effect**: Continuous shimmer animation on hover
+- **Melting Dream**: Dalí-inspired surreal morphing effects
+- **Geometric Float**: Picasso-inspired cubist rotations
+- **Golden Ratio Transitions**: Classical da Vinci proportions in motion
+- **Perspective 3D**: Enhanced depth and dimension
+- **Artistic Pulse**: Continuous subtle enhancement on hover
 
 ### Images
-Replace SVG files in `assets/images/` with your own artwork. Current SVGs feature:
-- Pastel gradient backgrounds
-- Selfie-inspired corner frames
-- Abstract doodle elements
-- Polaroid-style overlays
+Replace SVG files in `assets/images/` with your own artwork. The artistic theme features:
+- Bold geometric patterns and cubist shapes
+- Surreal gradient backgrounds
+- Classical frame overlays
+- Dramatic artistic shadows
 
 ### Content
 Update HTML files with your artwork details and descriptions
