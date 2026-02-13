@@ -78,7 +78,7 @@ body {
   background-attachment: fixed;
   background-color: var(--light-color);
   color: var(--dark-color);
-  line-height: 1.618; /* Golden ratio for classical beauty */
+  line-height: 1.6; /* Inspired by golden ratio, optimized for readability */
   font-size: 16px;
   position: relative;
 }
@@ -663,7 +663,7 @@ nav a:hover {
 .gallery-item-info p {
   color: #444;
   font-size: 1.05em;
-  line-height: 1.618; /* Golden ratio */
+  line-height: 1.6; /* Inspired by golden ratio, optimized for readability */
   font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -761,7 +761,7 @@ nav a:hover {
   color: #444;
   margin-bottom: 28px;
   font-size: 1.05em;
-  line-height: 1.618; /* Golden ratio */
+  line-height: 1.6; /* Inspired by golden ratio, optimized for readability */
   font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
 }
