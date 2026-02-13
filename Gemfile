@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "github-pages", "~> 231", group: :jekyll_plugins
 
 # Minima theme
-gem "minima", "~> 2.5"
+gem "millenial", "~> 2.5"
 
 # Jekyll plugins
 group :jekyll_plugins do
