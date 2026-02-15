@@ -1,35 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
-    <style>
-        body {
-            background-color: var(--dark-color);
-        }
-    </style>
-</head>
-<body>
-    <h1>Shop</h1>
+---
+layout: default
+title: Shop - Visions in Paint LLC
+---
+
+<div class="container">
+  <div class="hero animated-gradient">
+    <h2>🛒 Art Shop 🎨</h2>
+    <p class="artistic-script">Bring home a piece of artistry and elegance</p>
+  </div>
+
+  <section style="text-align: center; margin: 3rem 0;">
+    <p style="max-width: 900px; margin: 0 auto; font-size: 1.2rem; line-height: 1.8; color: var(--charcoal);">
+      Each piece in our collection is a unique work of art, carefully created to bring beauty and inspiration 
+      to your space. All purchases are securely processed through Stripe for your peace of mind. 🖼️
+    </p>
+  </section>
+
+  <div class="product-grid">
     <div class="product">
-        <h2>Product 1</h2>
-        <img src="product1.jpg" alt="Product 1">
-        <p>Description of product 1.</p>
+      <img src="{{ '/assets/images/art1.svg' | relative_url }}" alt="Abstract Dreams">
+      <h2>💧 Abstract Dreams</h2>
+      <p>A mesmerizing blend of purple hues and geometric forms that evoke a sense of wonder and tranquility. 
+      Perfect for meditation spaces or modern living areas.</p>
+      <div class="price">$299.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
     </div>
+    
     <div class="product">
-        <h2>Product 2</h2>
-        <img src="product2.jpg" alt="Product 2">
-        <p>Description of product 2.</p>
+      <img src="{{ '/assets/images/art2.svg' | relative_url }}" alt="Geometric Harmony">
+      <h2>🖼️ Geometric Harmony</h2>
+      <p>Bold rectangular shapes dancing in perfect synchrony, creating a vibrant pink masterpiece. 
+      Ideal for contemporary offices and creative spaces.</p>
+      <div class="price">$349.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
     </div>
+    
     <div class="product">
-        <h2>Product 3</h2>
-        <img src="product3.jpg" alt="Product 3">
-        <p>Description of product 3.</p>
+      <img src="{{ '/assets/images/art3.svg' | relative_url }}" alt="Prismatic Vision">
+      <h2>💧 Prismatic Vision</h2>
+      <p>Ethereal triangular composition in stunning ocean tones, representing clarity and depth. 
+      Brings a sense of calm and focus to any environment.</p>
+      <div class="price">$279.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
     </div>
-    <nav>
-        <button onclick="location.href='page1.html'">Page 1</button>
-        <button onclick="location.href='page2.html'">Page 2</button>
-    </nav>
-</body>
-</html>
+
+    <div class="product">
+      <img src="{{ '/assets/images/art4.svg' | relative_url }}" alt="Flowing Energy">
+      <h2>🖼️ Flowing Energy</h2>
+      <p>Graceful curves flow across warm sunset gradients, embodying movement and vitality. 
+      Perfect for energizing spaces and inspiring creativity.</p>
+      <div class="price">$325.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+    </div>
+
+    <div class="product">
+      <img src="{{ '/assets/images/art5.svg' | relative_url }}" alt="Celestial Rings">
+      <h2>💧 Celestial Rings</h2>
+      <p>Concentric circles in turquoise tones evoke cosmic harmony and eternal balance. 
+      A stunning centerpiece for any room seeking tranquility.</p>
+      <div class="price">$289.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+    </div>
+
+    <div class="product">
+      <img src="{{ '/assets/images/art6.svg' | relative_url }}" alt="Modern Mosaic">
+      <h2>🖼️ Modern Mosaic</h2>
+      <p>Rotated squares create a dynamic mosaic in vibrant purple and pink gradients. 
+      A bold statement piece for the modern art enthusiast.</p>
+      <div class="price">$359.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+    </div>
+  </div>
+
+  <section style="background: var(--paint-splash-gradient); padding: 3rem; border-radius: 15px; margin: 4rem 0; text-align: center; border: 4px solid var(--gold);">
+    <h2 style="color: var(--canvas-white); text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);">🎨 Stripe Payment Integration</h2>
+    <div style="background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 10px; margin: 2rem auto; max-width: 800px; text-align: left;">
+      <h3 style="color: var(--burnt-umber); margin-bottom: 1rem;">📝 Setup Instructions:</h3>
+      <ol style="color: var(--charcoal); line-height: 2; padding-left: 2rem;">
+        <li>Create a <a href="https://stripe.com" target="_blank" style="color: var(--teal); font-weight: 600;">Stripe account</a></li>
+        <li>Go to Products → Create products for each artwork</li>
+        <li>Create Payment Links for each product</li>
+        <li>Replace the <code>onclick</code> alerts with your Stripe payment links</li>
+        <li>Test with Stripe test card: <code style="background: var(--cream); padding: 4px 8px; border-radius: 4px;">4242 4242 4242 4242</code></li>
+      </ol>
+      <p style="color: var(--charcoal); margin-top: 1.5rem; font-style: italic;">
+        💡 <strong>Tip:</strong> Use Stripe's test mode during development to safely test payments without real charges.
+      </p>
+    </div>
+  </section>
+
+  <div style="text-align: center; margin: 3rem 0;">
+    <a class="btn btn-secondary" href="{{ '/gallery.html' | relative_url }}">🖼️ View Gallery</a>
+    <a class="btn" href="{{ '/' | relative_url }}">🏠 Back Home</a>
+  </div>
+</div>
