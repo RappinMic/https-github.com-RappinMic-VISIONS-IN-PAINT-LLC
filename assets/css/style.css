@@ -1,11 +1,400 @@
-@import url('https://fonts.googleapis.com/css2Pacifico|Dancing+Script|Great+Vibes|Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico|Dancing+Script|Great+Vibes|Allura&display=swap');
 
-/* Existing content from commit 48060f526934e6b520dc61fb94602e25aaad3825 remained intact */
+/* ========================================
+   CSS Variables - Modern Color Palette
+   ======================================== */
+:root {
+  --teal: #0ea5a5;
+  --coral: #d64545;
+  --sage: #6b9b7d;
+  --charcoal: #2a2a2a;
+  --dark-color: #2a2a2a; /* Alias for charcoal */
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-hover: rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   Base Styles and Reset
+   ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--charcoal);
+  background: linear-gradient(135deg, var(--light-gray) 0%, #ffffff 100%);
+  min-height: 100vh;
+}
 
 h1 {
-    font-family: 'Great Vibes', cursive; /* or use 'Allura' */
+  font-family: 'Great Vibes', cursive;
+  color: var(--teal);
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  color: var(--charcoal);
+}
+
+/* ========================================
+   Header and Navigation
+   ======================================== */
+header {
+  background: linear-gradient(135deg, var(--teal) 0%, var(--sage) 100%);
+  color: var(--white);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 6px var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover {
+  background: var(--white);
+  color: var(--teal);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   Container and Layout
+   ======================================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+main {
+  min-height: calc(100vh - 200px);
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--coral) 0%, var(--sage) 100%);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  color: var(--white);
+  box-shadow: 0 8px 16px var(--shadow);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
-    font-family: 'Dancing Script', cursive; /* or use 'Pacifico' */
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--white);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: var(--teal);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--shadow);
+  margin: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--sage);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px var(--shadow-hover);
+}
+
+.btn-secondary {
+  background: var(--coral);
+}
+
+.btn-secondary:hover {
+  background: var(--charcoal);
+}
+
+/* ========================================
+   Gallery Grid
+   ======================================== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.gallery-item {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--shadow);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px var(--shadow-hover);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item-info {
+  padding: 1.5rem;
+}
+
+.gallery-item-info h3 {
+  color: var(--teal);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-item-info p {
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+/* ========================================
+   Products Grid (Shop)
+   ======================================== */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin: 3rem 0;
+}
+
+.product {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px var(--shadow-hover);
+  border: 2px solid var(--teal);
+}
+
+.product img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-info {
+  padding: 2rem;
+}
+
+.product-info h2 {
+  color: var(--teal);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.product-info .description {
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.product-info .price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--coral);
+  margin: 1rem 0;
+}
+
+.product-info .btn {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+footer {
+  background: linear-gradient(135deg, var(--charcoal) 0%, var(--sage) 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  box-shadow: 0 -4px 6px var(--shadow);
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* ========================================
+   Comments Section
+   ======================================== */
+.comments-section {
+  margin: 4rem 0 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.comments-section h2 {
+  color: var(--teal);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.comments-section h3 {
+  color: var(--charcoal);
+  margin-top: 1rem;
+}
+
+.comments-section ol,
+.comments-section ul {
+  margin-left: 2rem;
+}
+
+.comments-section code {
+  background: var(--light-gray);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-family: monospace;
+  color: var(--coral);
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav {
+    gap: 1rem;
+  }
+  
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .gallery-grid,
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .product-info h2 {
+    font-size: 1.5rem;
+  }
+  
+  .product-info .price {
+    font-size: 1.5rem;
+  }
 }
