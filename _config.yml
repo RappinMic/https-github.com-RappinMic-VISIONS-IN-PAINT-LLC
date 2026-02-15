@@ -1,3 +1,4 @@
 theme: null
-plugins:
-  - jekyll-feed
+title: "Visions in Paint LLC"
+plugins: []
+github: [metadata]

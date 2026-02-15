@@ -3,9 +3,6 @@ source "https://rubygems.org"
 # GitHub Pages gem - includes Jekyll and compatible versions
 gem "github-pages", "~> 231", group: :jekyll_plugins
 
-# Millennial theme
-gem "jekyll-theme-millennial"
-
 # Jekyll plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
