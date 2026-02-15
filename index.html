@@ -1,67 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visions in Paint LLC - Original Artwork Gallery</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-<header>
-  <h1>🎨 Visions in Paint LLC</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="shop.html">Shop</a>
-  </nav>
-</header>
+---
+layout: default
+title: Home - Visions in Paint LLC
+---
 
 <div class="container">
-  <div class="hero">
-    <h2>Welcome to Visions in Paint LLC</h2>
-    <p>Explore stunning original artwork and bring beauty into your life</p>
-    <a class="btn" href="gallery.html">View Gallery</a>
-    <a class="btn btn-secondary" href="shop.html">Shop Now</a>
+  <div class="hero animated-gradient">
+    <h2>🎨 Welcome to Visions in Paint 🖼️</h2>
+    <p class="artistic-script">Where imagination meets canvas, and colors dance with creativity</p>
   </div>
 
-  <h2 style="text-align: center; margin: 40px 0; color: var(--dark-color);">Featured Artwork</h2>
-  
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="assets/images/art1.svg" alt="Abstract Dreams">
-      <div class="gallery-item-info">
-        <h3>Abstract Dreams</h3>
-        <p>A mesmerizing blend of purple hues and geometric forms</p>
-      </div>
-    </div>
-    
-    <div class="gallery-item">
-      <img src="assets/images/art2.svg" alt="Geometric Harmony">
-      <div class="gallery-item-info">
-        <h3>Geometric Harmony</h3>
-        <p>Bold shapes dancing in perfect synchrony</p>
-      </div>
-    </div>
-    
-    <div class="gallery-item">
-      <img src="assets/images/art3.svg" alt="Prismatic Vision">
-      <div class="gallery-item-info">
-        <h3>Prismatic Vision</h3>
-        <p>Ethereal triangular composition in ocean tones</p>
-      </div>
-    </div>
-  </div>
+  <section style="text-align: center; margin: 4rem 0;">
+    <h2 class="paint-accent">About Our Studio 💧</h2>
+    <p style="max-width: 800px; margin: 2rem auto; font-size: 1.2rem; line-height: 1.8; color: var(--charcoal);">
+      At Visions in Paint LLC, we celebrate the timeless art of painting with a modern twist. 
+      Each piece is carefully crafted with premium materials, bringing warmth and sophistication 
+      to any space. Our artistic journey combines traditional techniques with contemporary vision, 
+      creating unique masterpieces that tell stories through color and form.
+    </p>
+  </section>
 
-  <div style="text-align: center; margin-top: 40px;">
-    <a class="btn" href="gallery.html">See All Artwork</a>
-  </div>
+  <section>
+    <h2 style="text-align: center; margin: 3rem 0;">🖼️ Featured Artwork</h2>
+    
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in-up">
+        <img src="{{ '/assets/images/art1.svg' | relative_url }}" alt="Abstract Dreams">
+        <div class="gallery-item-info">
+          <h3>Abstract Dreams</h3>
+          <p>A mesmerizing blend of colors and geometric forms that evoke wonder and tranquility. Perfect for modern spaces seeking artistic sophistication.</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item fade-in-up">
+        <img src="{{ '/assets/images/art2.svg' | relative_url }}" alt="Geometric Harmony">
+        <div class="gallery-item-info">
+          <h3>Geometric Harmony</h3>
+          <p>Bold rectangular shapes dancing in perfect synchrony. A vibrant masterpiece that brings energy and balance to any room.</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item fade-in-up">
+        <img src="{{ '/assets/images/art3.svg' | relative_url }}" alt="Prismatic Vision">
+        <div class="gallery-item-info">
+          <h3>Prismatic Vision</h3>
+          <p>Ethereal triangular composition representing clarity and depth. This piece captures the essence of modern artistic expression.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin: 4rem 0;">
+      <a class="btn" href="{{ '/gallery.html' | relative_url }}">🖼️ View Full Gallery</a>
+      <a class="btn btn-secondary" href="{{ '/shop.html' | relative_url }}">🛒 Shop Now</a>
+    </div>
+  </section>
+
+  <section style="background: var(--earthy-gradient); padding: 3rem; border-radius: 15px; margin: 4rem 0; text-align: center; border: 4px solid var(--gold);">
+    <h2 style="color: var(--canvas-white); text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);">🎨 Why Choose Us?</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+      <div style="background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 10px; border: 2px solid var(--teal);">
+        <h3 style="color: var(--dark-plum); margin-bottom: 1rem;">💧 Premium Quality</h3>
+        <p style="color: var(--charcoal);">Only the finest materials and techniques for lasting beauty</p>
+      </div>
+      <div style="background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 10px; border: 2px solid var(--indian-summer);">
+        <h3 style="color: var(--burnt-umber); margin-bottom: 1rem;">🖼️ Unique Designs</h3>
+        <p style="color: var(--charcoal);">Each piece is an original work of art, never mass-produced</p>
+      </div>
+      <div style="background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 10px; border: 2px solid var(--gold);">
+        <h3 style="color: var(--dark-plum); margin-bottom: 1rem;">🎨 Passion & Vision</h3>
+        <p style="color: var(--charcoal);">Created with love and dedication to artistic excellence</p>
+      </div>
+    </div>
+  </section>
 </div>
-
-<footer>
-  <p>&copy; 2024 Visions in Paint LLC. All rights reserved.</p>
-  <p>Original artwork created with passion and vision</p>
-</footer>
-
-</body>
-</html>

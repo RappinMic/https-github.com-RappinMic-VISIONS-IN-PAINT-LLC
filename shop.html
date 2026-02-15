@@ -1,179 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop - Visions in Paint LLC</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-<header>
-  <h1>🎨 Visions in Paint LLC</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="shop.html">Shop</a>
-  </nav>
-</header>
+---
+layout: default
+title: Shop - Visions in Paint LLC
+---
 
 <div class="container">
-  <div class="hero">
-    <h2>🛒 Shop Original Artwork</h2>
-    <p>Own a piece of artistic excellence - Purchase your favorite pieces</p>
+  <div class="hero animated-gradient">
+    <h2>🛒 Art Shop 🎨</h2>
+    <p class="artistic-script">Bring home a piece of artistry and elegance</p>
   </div>
 
-  <div class="products-grid">
+  <section style="text-align: center; margin: 3rem 0;">
+    <p style="max-width: 900px; margin: 0 auto; font-size: 1.2rem; line-height: 1.8; color: var(--charcoal);">
+      Each piece in our collection is a unique work of art, carefully created to bring beauty and inspiration 
+      to your space. All purchases are securely processed through Stripe for your peace of mind. 🖼️
+    </p>
+  </section>
+
+  <div class="product-grid">
     <div class="product">
-      <img src="assets/images/art1.svg" alt="Abstract Dreams">
-      <div class="product-info">
-        <h2>Abstract Dreams</h2>
-        <p class="description">Original canvas painting featuring mesmerizing purple hues and geometric forms. 24" x 24"</p>
-        <p class="price">$350.00</p>
-        <button class="btn" onclick="handleCheckout('ABSTRACT')">Purchase Now</button>
-      </div>
+      <img src="{{ '/assets/images/art1.svg' | relative_url }}" alt="Abstract Dreams">
+      <h2>💧 Abstract Dreams</h2>
+      <p>A mesmerizing blend of purple hues and geometric forms that evoke a sense of wonder and tranquility. 
+      Perfect for meditation spaces or modern living areas.</p>
+      <div class="price">$299.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
     </div>
-
-    <div class="product">
-      <img src="assets/images/art2.svg" alt="Geometric Harmony">
-      <div class="product-info">
-        <h2>Geometric Harmony</h2>
-        <p class="description">Vibrant geometric composition in pink and red gradients. Perfect modern statement piece. 30" x 30"</p>
-        <p class="price">$425.00</p>
-        <button class="btn" onclick="handleCheckout('GEOMETRIC')">Purchase Now</button>
-      </div>
-    </div>
-
-    <div class="product">
-      <img src="assets/images/art3.svg" alt="Prismatic Vision">
-      <div class="product-info">
-        <h2>Prismatic Vision</h2>
-        <p class="description">Stunning triangular artwork in ocean blue tones. Brings calm and sophistication. 20" x 30"</p>
-        <p class="price">$275.00</p>
-        <button class="btn" onclick="handleCheckout('PRISMATIC')">Purchase Now</button>
-      </div>
-    </div>
-
-    <div class="product">
-      <img src="assets/images/art4.svg" alt="Flowing Energy">
-      <div class="product-info">
-        <h2>Flowing Energy</h2>
-        <p class="description">Dynamic curves flow across warm gradients. Represents movement and vitality. 24" x 36"</p>
-        <p class="price">$400.00</p>
-        <button class="btn" onclick="handleCheckout('FLOWING')">Purchase Now</button>
-      </div>
-    </div>
-
-    <div class="product">
-      <img src="assets/images/art5.svg" alt="Celestial Rings">
-      <div class="product-info">
-        <h2>Celestial Rings</h2>
-        <p class="description">Concentric circles in beautiful turquoise tones evoke cosmic harmony. 24" x 24"</p>
-        <p class="price">$325.00</p>
-        <button class="btn" onclick="handleCheckout('CELESTIAL')">Purchase Now</button>
-      </div>
-    </div>
-
-    <div class="product">
-      <img src="assets/images/art6.svg" alt="Modern Mosaic">
-      <div class="product-info">
-        <h2>Modern Mosaic</h2>
-        <p class="description">Contemporary rotated squares in vibrant purple and pink. Bold and beautiful. 30" x 30"</p>
-        <p class="price">$450.00</p>
-        <button class="btn" onclick="handleCheckout('MOSAIC')">Purchase Now</button>
-      </div>
-    </div>
-  </div>
-
-  <div style="text-align: center; margin: 40px 0;">
-    <a class="btn btn-secondary" href="gallery.html">View Gallery</a>
-    <a class="btn btn-secondary" href="index.html">Back Home</a>
-  </div>
-
-  <!-- Stripe Setup Instructions -->
-  <div style="background: rgba(255,255,255,0.8); padding: 30px; border-radius: 15px; margin-top: 40px;">
-    <h2 style="color: var(--dark-color); margin-bottom: 20px;">💳 Stripe Payment Setup Instructions</h2>
     
-    <div style="text-align: left; color: #666; line-height: 1.8;">
-      <h3 style="color: var(--dark-color); margin-top: 20px;">Step 1: Create Stripe Account</h3>
-      <ol>
-        <li>Go to <a href="https://stripe.com" target="_blank">stripe.com</a> and create an account</li>
-        <li>For testing, you can use <a href="https://dashboard.stripe.com/test/dashboard" target="_blank">Stripe Test Mode</a></li>
+    <div class="product">
+      <img src="{{ '/assets/images/art2.svg' | relative_url }}" alt="Geometric Harmony">
+      <h2>🖼️ Geometric Harmony</h2>
+      <p>Bold rectangular shapes dancing in perfect synchrony, creating a vibrant pink masterpiece. 
+      Ideal for contemporary offices and creative spaces.</p>
+      <div class="price">$349.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+    </div>
+    
+    <div class="product">
+      <img src="{{ '/assets/images/art3.svg' | relative_url }}" alt="Prismatic Vision">
+      <h2>💧 Prismatic Vision</h2>
+      <p>Ethereal triangular composition in stunning ocean tones, representing clarity and depth. 
+      Brings a sense of calm and focus to any environment.</p>
+      <div class="price">$279.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+    </div>
+
+    <div class="product">
+      <img src="{{ '/assets/images/art4.svg' | relative_url }}" alt="Flowing Energy">
+      <h2>🖼️ Flowing Energy</h2>
+      <p>Graceful curves flow across warm sunset gradients, embodying movement and vitality. 
+      Perfect for energizing spaces and inspiring creativity.</p>
+      <div class="price">$325.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+    </div>
+
+    <div class="product">
+      <img src="{{ '/assets/images/art5.svg' | relative_url }}" alt="Celestial Rings">
+      <h2>💧 Celestial Rings</h2>
+      <p>Concentric circles in turquoise tones evoke cosmic harmony and eternal balance. 
+      A stunning centerpiece for any room seeking tranquility.</p>
+      <div class="price">$289.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+    </div>
+
+    <div class="product">
+      <img src="{{ '/assets/images/art6.svg' | relative_url }}" alt="Modern Mosaic">
+      <h2>🖼️ Modern Mosaic</h2>
+      <p>Rotated squares create a dynamic mosaic in vibrant purple and pink gradients. 
+      A bold statement piece for the modern art enthusiast.</p>
+      <div class="price">$359.00</div>
+      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+    </div>
+  </div>
+
+  <section style="background: var(--paint-splash-gradient); padding: 3rem; border-radius: 15px; margin: 4rem 0; text-align: center; border: 4px solid var(--gold);">
+    <h2 style="color: var(--canvas-white); text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);">🎨 Stripe Payment Integration</h2>
+    <div style="background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 10px; margin: 2rem auto; max-width: 800px; text-align: left;">
+      <h3 style="color: var(--burnt-umber); margin-bottom: 1rem;">📝 Setup Instructions:</h3>
+      <ol style="color: var(--charcoal); line-height: 2; padding-left: 2rem;">
+        <li>Create a <a href="https://stripe.com" target="_blank" style="color: var(--teal); font-weight: 600;">Stripe account</a></li>
+        <li>Go to Products → Create products for each artwork</li>
+        <li>Create Payment Links for each product</li>
+        <li>Replace the <code>onclick</code> alerts with your Stripe payment links</li>
+        <li>Test with Stripe test card: <code style="background: var(--cream); padding: 4px 8px; border-radius: 4px;">4242 4242 4242 4242</code></li>
       </ol>
-
-      <h3 style="color: var(--dark-color); margin-top: 20px;">Step 2: Create Products & Payment Links in Stripe</h3>
-      <ol>
-        <li>Go to Products in your Stripe Dashboard</li>
-        <li>Create a product for each artwork with pricing</li>
-        <li>Click "Create payment link" for each product</li>
-        <li>Copy the payment link URL (starts with <code>https://buy.stripe.com/test_</code> for test mode)</li>
-      </ol>
-
-      <h3 style="color: var(--dark-color); margin-top: 20px;">Step 3: Configure This Website</h3>
-      <ol>
-        <li>Find the <code>STRIPE_PAYMENT_LINKS</code> object in the JavaScript below</li>
-        <li>Replace each placeholder URL with your actual Stripe Payment Link</li>
-        <li>Payment Links are the easiest way to integrate Stripe without a backend server</li>
-        <li>Configure success and cancel URLs in the Stripe Payment Link settings</li>
-      </ol>
-
-      <h3 style="color: var(--dark-color); margin-top: 20px;">Test Mode Credentials:</h3>
-      <ul>
-        <li><strong>Test Card:</strong> 4242 4242 4242 4242</li>
-        <li><strong>Expiry:</strong> Any future date (e.g., 12/34)</li>
-        <li><strong>CVC:</strong> Any 3 digits (e.g., 123)</li>
-        <li><strong>ZIP:</strong> Any 5 digits (e.g., 12345)</li>
-      </ul>
-
-      <p style="margin-top: 20px; padding: 15px; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 5px;">
-        <strong>⚠️ Current Status:</strong> The Stripe integration uses placeholder Payment Links. 
-        Create Payment Links in your Stripe Dashboard and replace them in the JavaScript code below to activate real payment processing.
-      </p>
-      
-      <p style="margin-top: 15px; padding: 15px; background: #d1ecf1; border-left: 4px solid #17a2b8; border-radius: 5px;">
-        <strong>💡 Recommended:</strong> Use Stripe Payment Links for the easiest setup without needing a backend server. 
-        Each button will redirect to Stripe's hosted checkout page.
+      <p style="color: var(--charcoal); margin-top: 1.5rem; font-style: italic;">
+        💡 <strong>Tip:</strong> Use Stripe's test mode during development to safely test payments without real charges.
       </p>
     </div>
+  </section>
+
+  <div style="text-align: center; margin: 3rem 0;">
+    <a class="btn btn-secondary" href="{{ '/gallery.html' | relative_url }}">🖼️ View Gallery</a>
+    <a class="btn" href="{{ '/' | relative_url }}">🏠 Back Home</a>
   </div>
 </div>
-
-<footer>
-  <p>&copy; 2024 Visions in Paint LLC. All rights reserved.</p>
-  <p>Secure payments powered by Stripe</p>
-</footer>
-
-<script>
-  // Stripe Payment Links Configuration
-  // Replace these placeholder URLs with your actual Stripe Payment Links
-  // Create Payment Links at: https://dashboard.stripe.com/test/payment-links
-  const STRIPE_PAYMENT_LINKS = {
-    'ABSTRACT': 'https://buy.stripe.com/test_00000000000000000000', // Replace with actual link
-    'GEOMETRIC': 'https://buy.stripe.com/test_00000000000000000001', // Replace with actual link
-    'PRISMATIC': 'https://buy.stripe.com/test_00000000000000000002', // Replace with actual link
-    'FLOWING': 'https://buy.stripe.com/test_00000000000000000003', // Replace with actual link
-    'CELESTIAL': 'https://buy.stripe.com/test_00000000000000000004', // Replace with actual link
-    'MOSAIC': 'https://buy.stripe.com/test_00000000000000000005', // Replace with actual link
-  };
-
-  function handleCheckout(productKey) {
-    const paymentLink = STRIPE_PAYMENT_LINKS[productKey];
-    
-    if (!paymentLink || paymentLink.includes('00000000000000000000')) {
-      // Payment link not configured
-      alert('💳 Payment processing is not yet configured.\n\n' +
-            'To enable payments:\n' +
-            '1. Create a Stripe account at stripe.com\n' +
-            '2. Create products and Payment Links in your Stripe Dashboard\n' +
-            '3. Replace the placeholder URLs in the STRIPE_PAYMENT_LINKS object\n\n' +
-            'Payment Links are the easiest way to accept payments without a backend server!');
-      return;
-    }
-    
-    // Redirect to Stripe Payment Link
-    window.location.href = paymentLink;
-  }
-</script>
-
-</body>
-</html>

@@ -7,6 +7,7 @@ _site/
 # Ruby
 Gemfile.lock
 vendor/
+.bundle/
 
 # macOS
 .DS_Store
@@ -24,3 +25,5 @@ vendor/
 
 # Logs
 *.log
+test-preview.html
+test-*.html
