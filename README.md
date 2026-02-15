@@ -1,101 +1,89 @@
 # 🎨 Visions in Paint LLC
 
-A stunning artistic-themed website for showcasing and selling original artwork with a sophisticated paint studio aesthetic.
+A sophisticated art gallery and museum website showcasing original artwork with modern interactive features and e-commerce capabilities.
 
-## 🖼️ Artistic Design Philosophy
+## 🖼️ Museum Design Philosophy (2026)
 
-This website embodies the spirit of a professional art gallery meets creative studio, featuring rich, harmonious colors and paint-themed design elements throughout.
+This website embodies the elegance of a world-class art museum with contemporary interactive features, featuring a dark sophisticated palette and museum-quality presentation.
 
-### **Sophisticated Color Palette**
-- **Teal (#008080)** - Primary accent color bringing freshness and creativity
-- **Ultramarine Blue (#120A8F)** - Bold, deep highlights for dramatic impact
-- **Indian Summer (#D2691E)** - Warm burnt orange adding artistic warmth
-- **Gold (#FFD700)** - Premium details and highlights for elegance
-- **Burnt Umber (#8B4513)** - Rich earth tones grounding the design
-- **Dark Plum (#5C3A6B)** - DARKER plum providing depth and sophistication
-- **Grape Leaves (#3C3D37)** - Sophisticated dark accents for contrast
-- **Canvas White (#F8F5F0)** - Warm off-white like artist canvas
-- **Cream (#FFF8DC)** - Soft backgrounds for comfort
+### **Museum Color Palette**
+- **Deep Charcoal (#1a1a1a)** - Primary background creating gallery atmosphere
+- **Warm Ivory (#f5f0e8)** - Secondary background and text for contrast
+- **Museum Gold (#c9a96e)** - Premium accent color for highlights and borders
+- **Frame Shadow (rgba(0, 0, 0, 0.4))** - Professional artwork framing
 
 ### **Typography**
-- **Playfair Display**: Elegant serif for headings with artistic flair
-- **Cinzel**: Classical serif for titles and branding
-- **Lato**: Clean, modern sans-serif for body text
-- **Great Vibes**: Artistic cursive script for special accents
-- Perfect balance of elegance and readability
+- **Playfair Display**: Elegant serif for headings (400, 700 weights)
+- **Inter**: Clean modern sans-serif for body text (300, 400 weights)
+- Perfect balance of sophistication and readability
 
-### **Paint-Themed Design Elements**
-- 🎨 **Paint Brush Icons** - Animated brush strokes in header and footer
-- 💧 **Paint Drop Effects** - Decorative paint droplets throughout
-- 🖼️ **Artist Palette Icons** - Gallery and artwork markers
-- **Canvas-Style Borders** - Textured borders mimicking canvas frames
-- **Artistic Gradients** - Smooth color transitions with paint-flow animations
-- **Hover Effects** - Interactive transformations on gallery items and buttons
-- **Professional Gallery Layout** - Grid system with sophisticated spacing
-- **Creative Flourishes** - Subtle decorative elements enhancing the artistic feel
+### **2026 Modern Features**
+- **Scroll-Triggered Animations** - IntersectionObserver reveals artwork with staggered delays
+- **Parallax Scrolling** - Hero and exhibition banners with fixed background attachment
+- **Hover Micro-interactions** - Image scale(1.08), brightness boost, golden frame glow
+- **CTA Button Animations** - ::before pseudo-element fill animation with scaleX
+- **Cursor Spotlight Effect** - Radial gradient follows mouse movement
+- **Museum-Style Frames** - 8px solid borders with gold accent on hover
+- **Shopping Cart System** - Add/remove items, localStorage persistence, sliding drawer
+- **Responsive Mobile Design** - Hamburger menu, single-column grids, optimized layouts
 
 ## 🚀 Features
 
-- **Visually Striking Gallery** - 6 unique artworks with professional presentation
-- **Paint Studio Aesthetic** - Rich color palette with sophisticated paint-themed design
-- **Artistic Animations** - Smooth transitions, hover effects, and paint-flow animations
-- **Modern Typography** - Elegant serif fonts balanced with clean sans-serif
-- **Sophisticated Colors** - Harmonious palette of teal, plum, burnt umber, and gold
-- **Paint-Themed Icons** - 🎨 Brush, 💧 drops, and 🖼️ palette icons throughout
-- **Canvas-Style Borders** - Professional framing effects on content containers
-- **Creative Flourishes** - Decorative elements enhancing the artistic atmosphere
-- **Responsive Design** - Seamless viewing on mobile, tablet, and desktop devices
-- **Interactive Elements** - Engaging hover effects with smooth transformations
-- **Stripe Payment Integration** - Secure payments using Stripe Payment Links
-- **Disqus Comments** - User feedback and engagement on gallery page
-- **Cross-Browser Compatible** - Works seamlessly across all modern browsers
-- **Static Website** - Fast loading with no backend required
-- **GitHub Pages Ready** - Easy deployment
+- **Museum Art Gallery** - 6 unique artworks with professional museum-style frames
+- **Interactive Shopping Cart** - Add to cart, view items, localStorage persistence, cart badge
+- **Scroll Animations** - IntersectionObserver triggers staggered artwork reveals
+- **Parallax Effects** - Background images with fixed attachment on hero and banners
+- **Hover Effects** - Image scaling, brightness adjustments, golden border glow
+- **Mobile Navigation** - Hamburger menu with smooth slide-in animation
+- **Stripe Ready** - Cart system ready for Stripe payment integration
+- **Disqus Comments** - User engagement on gallery page
+- **Responsive Design** - Seamless experience across all devices
+- **Dark Museum Theme** - Sophisticated dark palette with gold accents
+- **Accessibility** - Focus-visible outlines, prefers-reduced-motion support
+- **GitHub Pages Ready** - Jekyll-powered static site generation
 
 ## 📸 Pages
 
-- **Home** (`index.html`) - Welcome page with featured artwork
-- **Gallery** (`gallery.html`) - Full art gallery with Disqus comments
-- **Shop** (`shop.html`) - Purchase artwork with Stripe integration
-- **Success** (`success.html`) - Payment confirmation page
+- **Home** (`index.html`) - Hero section, featured artwork collection, parallax banner
+- **Gallery** (`gallery.html`) - Full art gallery with scroll animations and Disqus comments
+- **Shop** (`shop.html`) - Museum shop with shopping cart system and 6 products
+- **Success** (`success.html`) - Payment confirmation page with animated checkmark
 
 ## ⚙️ Setup
 
-### Quick Start (Static Site)
-
-Simply open `index.html` in a web browser or serve with any static file server:
+### Quick Start (Jekyll)
 
 ```bash
-# Using Python
-python3 -m http.server 8000
-
-# Using Node.js
-npx http-server
-
-# Using PHP
-php -S localhost:8000
-```
-
-Then visit `http://localhost:8000` in your browser.
-
-### Jekyll Setup (Optional)
-
-```bash
-git clone https://github.com/yourusername/visions-in-paint.git
-cd visions-in-paint
+git clone https://github.com/RappinMic/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC.git
+cd https-github.com-RappinMic-VISIONS-IN-PAINT-LLC
 bundle install
 bundle exec jekyll serve
 ```
 
-## 💳 Stripe Integration Setup
+Then visit `http://localhost:4000` in your browser.
+
+### GitHub Pages Deployment
+
+Push to the main branch and GitHub Pages will automatically build and deploy your site.
+
+## 🛒 Shopping Cart Features
+
+The shopping cart system includes:
+- **Add to Cart** - Products can be added with name, price, and image
+- **Cart Badge** - Shows item count on cart icon
+- **Cart Drawer** - Slides in from right side with cart contents
+- **Remove Items** - Delete items from cart individually
+- **Subtotal Calculation** - Automatic total calculation
+- **localStorage** - Cart persists across page reloads
+- **Responsive** - Full-width drawer on mobile devices
+
+### Stripe Integration (Future Enhancement)
 
 1. Create a [Stripe account](https://stripe.com)
 2. Go to Products → Create products for each artwork
 3. Create Payment Links for each product
-4. Update the `STRIPE_PAYMENT_LINKS` object in `shop.html` with your links
+4. Update the checkout button in `assets/js/main.js` to redirect to Stripe
 5. Test with Stripe test card: `4242 4242 4242 4242`
-
-See detailed instructions in `shop.html`.
 
 ## 💬 Disqus Comments Setup
 
@@ -103,71 +91,59 @@ See detailed instructions in `shop.html`.
 2. Register your site and get a shortname
 3. Replace `'visions-in-paint'` in `gallery.html` with your shortname
 
-See detailed instructions in `gallery.html`.
-
 ## 🎨 Customization
 
 ### Colors
-Edit CSS variables in `assets/css/style.css` to customize the artistic color palette:
-- `--teal`: Primary accent (#008080)
-- `--ultramarine`: Bold highlights (#120A8F)
-- `--indian-summer`: Warm burnt orange (#D2691E)
-- `--gold`: Premium details (#FFD700)
-- `--burnt-umber`: Rich earth tones (#8B4513)
-- `--dark-plum`: Darker plum complement (#5C3A6B)
-- `--grape-leaves`: Sophisticated dark accents (#3C3D37)
-- `--canvas-white`: Warm off-white (#F8F5F0)
-- `--cream`: Soft cream backgrounds (#FFF8DC)
-
-### Typography
-The site uses elegant font families for the artistic aesthetic:
-- **Playfair Display**: Elegant serif for headings with artistic character
-- **Cinzel**: Classical serif for titles and branding elements
-- **Lato**: Clean, modern sans-serif for body text
-- **Great Vibes**: Artistic cursive script for special decorative elements
-
-### Animations
-All animations are optimized for performance:
-- **Paint Flow**: Animated gradients with smooth color transitions
-- **Brush Stroke**: Rotating paint brush animations in header
-- **Drop Paint**: Subtle paint droplet animations on hover
-- **Canvas Border**: Layered border effects mimicking canvas frames
-- **Fade In Up**: Smooth entrance animations for gallery items
-- **Hover Transformations**: Elegant scaling and shadow effects
+Edit CSS variables in `assets/css/style.css`:
+```css
+:root {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #f5f0e8;
+  --text-light: #f5f0e8;
+  --text-dark: #1a1a1a;
+  --accent: #c9a96e;
+  --frame-shadow: rgba(0, 0, 0, 0.4);
+}
+```
 
 ### Images
-Replace SVG files in `assets/images/` with your own artwork. The artistic theme features:
-- Professional gallery presentation with hover effects
-- Canvas-style borders and elegant frames
-- Paint-themed decorative icons
-- Sophisticated color-coordinated borders
+Replace SVG files in `assets/images/` with your own artwork:
+- `art1.svg` through `art6.svg`
+- Maintain aspect ratio for best results
+- Museum frames automatically apply to all images
 
 ### Content
-Update HTML files with your artwork details and descriptions
+Update HTML files with your artwork details, prices, and descriptions.
 
 ## 📁 Project Structure
 
 ```
 .
-├── index.html              # Home page
-├── gallery.html            # Gallery with comments
-├── shop.html               # Shop with Stripe
+├── index.html              # Home page with hero and featured works
+├── gallery.html            # Full gallery with comments
+├── shop.html               # Shop with cart system
 ├── success.html            # Payment success page
+├── _config.yml             # Jekyll configuration
+├── _layouts/
+│   └── default.html        # Main layout template
+├── _includes/
+│   ├── header.html         # Museum-styled navigation
+│   └── footer.html         # Footer with links
 ├── assets/
 │   ├── css/
-│   │   └── style.css      # Artistic styling
+│   │   └── style.css       # Museum theme CSS (500+ lines)
+│   ├── js/
+│   │   └── main.js         # Interactive features & cart system
 │   └── images/
-│       ├── art1.svg       # Artwork images
-│       ├── art2.svg
+│       ├── art1.svg        # Artwork images
 │       └── ...
-├── _config.yml            # Jekyll config (optional)
 └── README.md
 ```
 
 ## 🌟 Live Demo
 
-Visit the live site: [https://rappinmic.github.io/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC/](https://rappinmic.github.io/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC/)
+Visit: [https://rappinmic.github.io/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC/](https://rappinmic.github.io/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC/)
 
 ## 📝 License
 
-© 2024 Visions in Paint LLC. All rights reserved.
+© 2026 Visions in Paint LLC. All rights reserved.

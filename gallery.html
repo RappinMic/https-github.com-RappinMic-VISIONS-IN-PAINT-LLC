@@ -3,82 +3,78 @@ layout: default
 title: Gallery - Visions in Paint LLC
 ---
 
-<div class="container">
-  <div class="hero animated-gradient">
-    <h2>🖼️ Art Gallery 🎨</h2>
-    <p class="artistic-script">Immerse yourself in a world of color, form, and imagination</p>
-  </div>
-
+<!-- Gallery Hero -->
+<section class="container" style="padding-top: 4rem;">
+  <h1 style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">🖼️ Art Gallery</h1>
+  <p style="text-align: center; font-size: 1.2rem; color: var(--accent); margin-bottom: 3rem;">Immerse yourself in a world of color, form, and imagination</p>
+  
+  <!-- Gallery Grid -->
   <div class="gallery-grid">
-    <div class="gallery-item">
+    <div class="artwork-card" data-animate>
       <img src="{{ '/assets/images/art1.svg' | relative_url }}" alt="Abstract Dreams">
-      <div class="gallery-item-info">
+      <div class="artwork-info">
         <h3>Abstract Dreams</h3>
         <p>A mesmerizing blend of colors and geometric forms that evoke a sense of wonder and tranquility. Experience the harmony of artistic expression.</p>
       </div>
     </div>
     
-    <div class="gallery-item">
+    <div class="artwork-card" data-animate>
       <img src="{{ '/assets/images/art2.svg' | relative_url }}" alt="Geometric Harmony">
-      <div class="gallery-item-info">
+      <div class="artwork-info">
         <h3>Geometric Harmony</h3>
         <p>Bold rectangular shapes dancing in perfect synchrony, creating a vibrant masterpiece that brings energy to any space.</p>
       </div>
     </div>
     
-    <div class="gallery-item">
+    <div class="artwork-card" data-animate>
       <img src="{{ '/assets/images/art3.svg' | relative_url }}" alt="Prismatic Vision">
-      <div class="gallery-item-info">
+      <div class="artwork-info">
         <h3>Prismatic Vision</h3>
-        <p>Ethereal triangular composition in stunning ocean tones, representing clarity and depth.</p>
+        <p>Ethereal triangular composition in stunning tones, representing clarity and depth.</p>
       </div>
     </div>
 
-    <div class="gallery-item">
+    <div class="artwork-card" data-animate>
       <img src="{{ '/assets/images/art4.svg' | relative_url }}" alt="Flowing Energy">
-      <div class="gallery-item-info">
+      <div class="artwork-info">
         <h3>Flowing Energy</h3>
-        <p>Graceful curves flow across warm sunset gradients, embodying movement and vitality.</p>
+        <p>Graceful curves flow across warm gradients, embodying movement and vitality.</p>
       </div>
     </div>
 
-    <div class="gallery-item">
+    <div class="artwork-card" data-animate>
       <img src="{{ '/assets/images/art5.svg' | relative_url }}" alt="Celestial Rings">
-      <div class="gallery-item-info">
+      <div class="artwork-info">
         <h3>Celestial Rings</h3>
-        <p>Concentric circles in turquoise tones evoke cosmic harmony and eternal balance.</p>
+        <p>Concentric circles evoke cosmic harmony and eternal balance.</p>
       </div>
     </div>
 
-    <div class="gallery-item">
+    <div class="artwork-card" data-animate>
       <img src="{{ '/assets/images/art6.svg' | relative_url }}" alt="Modern Mosaic">
-      <div class="gallery-item-info">
+      <div class="artwork-info">
         <h3>Modern Mosaic</h3>
         <p>Rotated squares create a dynamic mosaic in stunning gradients, a bold statement for modern art enthusiasts.</p>
       </div>
     </div>
   </div>
 
-  <div style="text-align: center; margin: 40px 0;">
-    <a class="btn" href="{{ '/shop.html' | relative_url }}">🛒 Purchase Artwork</a>
-    <a class="btn btn-secondary" href="{{ '/' | relative_url }}">🏠 Back Home</a>
+  <div class="cta-buttons">
+    <a class="btn" href="{{ '/shop.html' | relative_url }}">Purchase Artwork</a>
+    <a class="btn btn-secondary" href="{{ '/' | relative_url }}">Back Home</a>
   </div>
 
   <!-- Disqus Comments Section -->
   <div class="comments-section">
-    <h2>💬 Share Your Thoughts</h2>
+    <h2>Share Your Thoughts</h2>
     <div id="disqus_thread"></div>
     <script>
-      /**
-      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-      
       var disqus_config = function () {
-        this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'gallery-page'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = window.location.href;
+        this.page.identifier = 'gallery-page';
       };
       
-      (function() { // DON'T EDIT BELOW THIS LINE
+      (function() {
         var d = document, s = d.createElement('script');
         s.src = 'https://visions-in-paint.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
@@ -87,21 +83,20 @@ title: Gallery - Visions in Paint LLC
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     
-    <!-- Disqus Placeholder Instructions -->
-    <div style="background: rgba(255,255,255,0.8); padding: 20px; border-radius: 10px; margin-top: 20px; text-align: left;">
-      <h3 style="color: var(--dark-color);">📝 Disqus Setup Instructions:</h3>
-      <ol style="color: #666; line-height: 1.8;">
-        <li>Create a Disqus account at <a href="https://disqus.com" target="_blank">disqus.com</a></li>
+    <!-- Disqus Setup Instructions -->
+    <div style="background: rgba(245, 240, 232, 0.1); padding: 20px; border-radius: 10px; margin-top: 20px; border-left: 4px solid var(--accent);">
+      <h3 style="color: var(--accent);">Disqus Setup Instructions:</h3>
+      <ol style="color: var(--text-light); line-height: 1.8; padding-left: 1.5rem;">
+        <li>Create a Disqus account at <a href="https://disqus.com" target="_blank" style="color: var(--accent);">disqus.com</a></li>
         <li>Register your site and get your shortname</li>
-        <li>Replace <code>'visions-in-paint'</code> in the script above with your Disqus shortname</li>
+        <li>Replace <code style="background: rgba(0,0,0,0.3); padding: 2px 8px; border-radius: 3px;">'visions-in-paint'</code> in the script above with your Disqus shortname</li>
         <li>The comments section will then be live and functional</li>
       </ol>
-      <p style="color: #666; margin-top: 10px;">
-        <strong>Current Status:</strong> Using placeholder shortname 'visions-in-paint'. 
-        Replace this with your actual Disqus shortname to activate comments.
+      <p style="color: var(--text-light); margin-top: 10px; font-size: 0.9rem;">
+        <strong>Current Status:</strong> Using placeholder shortname 'visions-in-paint'. Replace with your actual Disqus shortname to activate comments.
       </p>
     </div>
   </div>
-</div>
+</section>
 
 <script id="dsq-count-scr" src="//visions-in-paint.disqus.com/count.js" async></script>

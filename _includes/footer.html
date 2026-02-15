@@ -1,5 +1,11 @@
 <footer>
-  <p>🎨 &copy; 2024 {{ site.title }}. All rights reserved. 💧</p>
-  <p>Original artwork created with passion and vision 🖼️</p>
-  <p class="artistic-script">Where creativity flows like paint on canvas</p>
+  <div class="footer-content">
+    <p>&copy; 2026 {{ site.title | default: "Visions in Paint LLC" }}. All rights reserved.</p>
+    <p>Original artwork • Museum quality • Timeless elegance</p>
+    <nav class="footer-nav">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/gallery.html' | relative_url }}">Gallery</a>
+      <a href="{{ '/shop.html' | relative_url }}">Shop</a>
+    </nav>
+  </div>
 </footer>

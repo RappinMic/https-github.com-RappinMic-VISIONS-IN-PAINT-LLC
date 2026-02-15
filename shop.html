@@ -3,94 +3,105 @@ layout: default
 title: Shop - Visions in Paint LLC
 ---
 
-<div class="container">
-  <div class="hero animated-gradient">
-    <h2>🛒 Art Shop 🎨</h2>
-    <p class="artistic-script">Bring home a piece of artistry and elegance</p>
-  </div>
-
-  <section style="text-align: center; margin: 3rem 0;">
-    <p style="max-width: 900px; margin: 0 auto; font-size: 1.2rem; line-height: 1.8; color: var(--charcoal);">
-      Each piece in our collection is a unique work of art, carefully created to bring beauty and inspiration 
-      to your space. All purchases are securely processed through Stripe for your peace of mind. 🖼️
-    </p>
-  </section>
-
+<!-- Shop Hero -->
+<section class="container" style="padding-top: 4rem;">
+  <h1 style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">🛍️ Museum Shop</h1>
+  <p style="text-align: center; font-size: 1.2rem; color: var(--accent); margin-bottom: 3rem;">Bring home a masterpiece — Museum quality prints</p>
+  
+  <!-- Product Grid -->
   <div class="product-grid">
-    <div class="product">
+    <div class="product-card">
       <img src="{{ '/assets/images/art1.svg' | relative_url }}" alt="Abstract Dreams">
-      <h2>💧 Abstract Dreams</h2>
-      <p>A mesmerizing blend of purple hues and geometric forms that evoke a sense of wonder and tranquility. 
-      Perfect for meditation spaces or modern living areas.</p>
-      <div class="price">$299.00</div>
-      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+      <div class="product-info">
+        <h3>Abstract Dreams</h3>
+        <p>A mesmerizing blend of purple hues and geometric forms. Museum-quality print on premium canvas.</p>
+        <div class="product-price">$89.00</div>
+        <button class="add-to-cart" onclick="addToCart('Abstract Dreams', 89.00, '{{ '/assets/images/art1.svg' | relative_url }}')">Add to Cart</button>
+      </div>
     </div>
     
-    <div class="product">
+    <div class="product-card">
       <img src="{{ '/assets/images/art2.svg' | relative_url }}" alt="Geometric Harmony">
-      <h2>🖼️ Geometric Harmony</h2>
-      <p>Bold rectangular shapes dancing in perfect synchrony, creating a vibrant pink masterpiece. 
-      Ideal for contemporary offices and creative spaces.</p>
-      <div class="price">$349.00</div>
-      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+      <div class="product-info">
+        <h3>Geometric Harmony</h3>
+        <p>Bold rectangular shapes in vibrant pink. Perfect for contemporary spaces.</p>
+        <div class="product-price">$95.00</div>
+        <button class="add-to-cart" onclick="addToCart('Geometric Harmony', 95.00, '{{ '/assets/images/art2.svg' | relative_url }}')">Add to Cart</button>
+      </div>
     </div>
     
-    <div class="product">
+    <div class="product-card">
       <img src="{{ '/assets/images/art3.svg' | relative_url }}" alt="Prismatic Vision">
-      <h2>💧 Prismatic Vision</h2>
-      <p>Ethereal triangular composition in stunning ocean tones, representing clarity and depth. 
-      Brings a sense of calm and focus to any environment.</p>
-      <div class="price">$279.00</div>
-      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+      <div class="product-info">
+        <h3>Prismatic Vision</h3>
+        <p>Ethereal triangular composition in ocean tones. Brings calm and focus.</p>
+        <div class="product-price">$79.00</div>
+        <button class="add-to-cart" onclick="addToCart('Prismatic Vision', 79.00, '{{ '/assets/images/art3.svg' | relative_url }}')">Add to Cart</button>
+      </div>
     </div>
 
-    <div class="product">
+    <div class="product-card">
       <img src="{{ '/assets/images/art4.svg' | relative_url }}" alt="Flowing Energy">
-      <h2>🖼️ Flowing Energy</h2>
-      <p>Graceful curves flow across warm sunset gradients, embodying movement and vitality. 
-      Perfect for energizing spaces and inspiring creativity.</p>
-      <div class="price">$325.00</div>
-      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+      <div class="product-info">
+        <h3>Flowing Energy</h3>
+        <p>Graceful curves across warm gradients. Energizes and inspires creativity.</p>
+        <div class="product-price">$105.00</div>
+        <button class="add-to-cart" onclick="addToCart('Flowing Energy', 105.00, '{{ '/assets/images/art4.svg' | relative_url }}')">Add to Cart</button>
+      </div>
     </div>
 
-    <div class="product">
+    <div class="product-card">
       <img src="{{ '/assets/images/art5.svg' | relative_url }}" alt="Celestial Rings">
-      <h2>💧 Celestial Rings</h2>
-      <p>Concentric circles in turquoise tones evoke cosmic harmony and eternal balance. 
-      A stunning centerpiece for any room seeking tranquility.</p>
-      <div class="price">$289.00</div>
-      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+      <div class="product-info">
+        <h3>Celestial Rings</h3>
+        <p>Concentric circles in turquoise tones. Evokes cosmic harmony.</p>
+        <div class="product-price">$85.00</div>
+        <button class="add-to-cart" onclick="addToCart('Celestial Rings', 85.00, '{{ '/assets/images/art5.svg' | relative_url }}')">Add to Cart</button>
+      </div>
     </div>
 
-    <div class="product">
+    <div class="product-card">
       <img src="{{ '/assets/images/art6.svg' | relative_url }}" alt="Modern Mosaic">
-      <h2>🖼️ Modern Mosaic</h2>
-      <p>Rotated squares create a dynamic mosaic in vibrant purple and pink gradients. 
-      A bold statement piece for the modern art enthusiast.</p>
-      <div class="price">$359.00</div>
-      <button onclick="alert('Stripe integration: Add your payment link here')">🎨 Purchase Now</button>
+      <div class="product-info">
+        <h3>Modern Mosaic</h3>
+        <p>Rotated squares in vibrant gradients. A bold statement piece.</p>
+        <div class="product-price">$115.00</div>
+        <button class="add-to-cart" onclick="addToCart('Modern Mosaic', 115.00, '{{ '/assets/images/art6.svg' | relative_url }}')">Add to Cart</button>
+      </div>
     </div>
   </div>
 
-  <section style="background: var(--paint-splash-gradient); padding: 3rem; border-radius: 15px; margin: 4rem 0; text-align: center; border: 4px solid var(--gold);">
-    <h2 style="color: var(--canvas-white); text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);">🎨 Stripe Payment Integration</h2>
-    <div style="background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 10px; margin: 2rem auto; max-width: 800px; text-align: left;">
-      <h3 style="color: var(--burnt-umber); margin-bottom: 1rem;">📝 Setup Instructions:</h3>
-      <ol style="color: var(--charcoal); line-height: 2; padding-left: 2rem;">
-        <li>Create a <a href="https://stripe.com" target="_blank" style="color: var(--teal); font-weight: 600;">Stripe account</a></li>
-        <li>Go to Products → Create products for each artwork</li>
-        <li>Create Payment Links for each product</li>
-        <li>Replace the <code>onclick</code> alerts with your Stripe payment links</li>
-        <li>Test with Stripe test card: <code style="background: var(--cream); padding: 4px 8px; border-radius: 4px;">4242 4242 4242 4242</code></li>
-      </ol>
-      <p style="color: var(--charcoal); margin-top: 1.5rem; font-style: italic;">
-        💡 <strong>Tip:</strong> Use Stripe's test mode during development to safely test payments without real charges.
-      </p>
-    </div>
-  </section>
+  <div class="cta-buttons">
+    <a class="btn btn-secondary" href="{{ '/gallery.html' | relative_url }}">Continue Browsing</a>
+    <a class="btn" href="{{ '/' | relative_url }}">Back Home</a>
+  </div>
+</section>
 
-  <div style="text-align: center; margin: 3rem 0;">
-    <a class="btn btn-secondary" href="{{ '/gallery.html' | relative_url }}">🖼️ View Gallery</a>
-    <a class="btn" href="{{ '/' | relative_url }}">🏠 Back Home</a>
+<!-- Cart Icon -->
+<div class="cart-icon" onclick="toggleCart()">
+  🛒
+  <span class="cart-badge" style="display: none;">0</span>
+</div>
+
+<!-- Cart Drawer -->
+<div class="cart-drawer">
+  <div class="cart-header">
+    <h3>Shopping Cart</h3>
+    <button class="close-cart" onclick="closeCart()" aria-label="Close cart">×</button>
+  </div>
+  
+  <div class="cart-items">
+    <div class="empty-cart">Your cart is empty</div>
+  </div>
+  
+  <div class="cart-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal:</span>
+      <span>$0.00</span>
+    </div>
+    <button class="checkout-btn">Checkout with Stripe</button>
+    <p style="font-size: 0.85rem; color: var(--accent); margin-top: 1rem; text-align: center;">
+      Secure payment processing via Stripe
+    </p>
   </div>
 </div>
