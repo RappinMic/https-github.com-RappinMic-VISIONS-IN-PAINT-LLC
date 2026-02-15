@@ -1,35 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
-    <style>
-        body {
-            background-color: var(--dark-color);
-        }
-    </style>
-</head>
-<body>
-    <h1>Shop</h1>
-    <div class="product">
-        <h2>Product 1</h2>
-        <img src="product1.jpg" alt="Product 1">
-        <p>Description of product 1.</p>
+---
+layout: default
+title: Shop - Visions in Paint LLC
+---
+
+<!-- Shopping Cart Drawer -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h2>🛒 Your Cart</h2>
+    <span class="cart-close" id="cartClose">×</span>
+  </div>
+  
+  <div class="cart-items" id="cartItems"></div>
+  
+  <div class="cart-empty" id="cartEmpty">
+    <p>Your cart is empty</p>
+    <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">Add some artwork to get started!</p>
+  </div>
+  
+  <div class="cart-footer" id="cartFooter" style="display: none;">
+    <div class="cart-subtotal">
+      <span>Subtotal:</span>
+      <span class="cart-subtotal-amount" id="subtotalAmount">$0.00</span>
     </div>
-    <div class="product">
-        <h2>Product 2</h2>
-        <img src="product2.jpg" alt="Product 2">
-        <p>Description of product 2.</p>
+    <button class="cart-checkout-btn" onclick="alert('Checkout feature coming soon! For now, use the Buy Now buttons on individual products.')">
+      Checkout with Stripe
+    </button>
+  </div>
+</div>
+
+<div class="container" style="padding-top: 6rem;">
+  <div style="text-align: center; margin-bottom: 3rem;">
+    <h1 class="section-title">🛍️ Art Store</h1>
+    <p style="font-size: 1.2rem; color: var(--accent);">Own a Piece of the Vision</p>
+  </div>
+
+  <!-- Shop Controls -->
+  <div class="shop-controls">
+    <button class="filter-button active" data-filter="all">All Artwork</button>
+    <button class="filter-button" data-filter="under-400">Under $400</button>
+    <button class="filter-button" data-filter="400-500">$400 - $500</button>
+    <button class="filter-button" data-filter="over-500">Over $500</button>
+    <select class="sort-select">
+      <option value="">Sort By</option>
+      <option value="name-asc">Name (A-Z)</option>
+      <option value="price-asc">Price (Low to High)</option>
+      <option value="price-desc">Price (High to Low)</option>
+    </select>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="gallery-grid">
+    <!-- Product 1: Abstract Dreams -->
+    <div class="artwork-card product-card" data-animate>
+      <div class="artwork-frame">
+        <img src="{{ '/assets/images/art1.svg' | relative_url }}" alt="Abstract Dreams" class="artwork-image">
+        <div class="artwork-info">
+          <h3 class="artwork-title">Abstract Dreams</h3>
+          <p class="product-medium">Digital Print on Canvas • 24" × 36"</p>
+          <p class="product-price">$450</p>
+          <div class="product-actions">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <a href="https://buy.stripe.com/test_placeholder1" class="stripe-buy-btn" target="_blank">Buy Now with Stripe</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="product">
-        <h2>Product 3</h2>
-        <img src="product3.jpg" alt="Product 3">
-        <p>Description of product 3.</p>
+
+    <!-- Product 2: Geometric Harmony -->
+    <div class="artwork-card product-card" data-animate>
+      <div class="artwork-frame">
+        <img src="{{ '/assets/images/art2.svg' | relative_url }}" alt="Geometric Harmony" class="artwork-image">
+        <div class="artwork-info">
+          <h3 class="artwork-title">Geometric Harmony</h3>
+          <p class="product-medium">Digital Print on Canvas • 24" × 36"</p>
+          <p class="product-price">$380</p>
+          <div class="product-actions">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <a href="https://buy.stripe.com/test_placeholder2" class="stripe-buy-btn" target="_blank">Buy Now with Stripe</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <nav>
-        <button onclick="location.href='page1.html'">Page 1</button>
-        <button onclick="location.href='page2.html'">Page 2</button>
-    </nav>
-</body>
-</html>
+
+    <!-- Product 3: Prismatic Vision -->
+    <div class="artwork-card product-card" data-animate>
+      <div class="artwork-frame">
+        <img src="{{ '/assets/images/art3.svg' | relative_url }}" alt="Prismatic Vision" class="artwork-image">
+        <div class="artwork-info">
+          <h3 class="artwork-title">Prismatic Vision</h3>
+          <p class="product-medium">Digital Print on Canvas • 24" × 36"</p>
+          <p class="product-price">$520</p>
+          <div class="product-actions">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <a href="https://buy.stripe.com/test_placeholder3" class="stripe-buy-btn" target="_blank">Buy Now with Stripe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4: Flowing Energy -->
+    <div class="artwork-card product-card" data-animate>
+      <div class="artwork-frame">
+        <img src="{{ '/assets/images/art4.svg' | relative_url }}" alt="Flowing Energy" class="artwork-image">
+        <div class="artwork-info">
+          <h3 class="artwork-title">Flowing Energy</h3>
+          <p class="product-medium">Digital Print on Canvas • 24" × 36"</p>
+          <p class="product-price">$290</p>
+          <div class="product-actions">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <a href="https://buy.stripe.com/test_placeholder4" class="stripe-buy-btn" target="_blank">Buy Now with Stripe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5: Celestial Rings -->
+    <div class="artwork-card product-card" data-animate>
+      <div class="artwork-frame">
+        <img src="{{ '/assets/images/art5.svg' | relative_url }}" alt="Celestial Rings" class="artwork-image">
+        <div class="artwork-info">
+          <h3 class="artwork-title">Celestial Rings</h3>
+          <p class="product-medium">Digital Print on Canvas • 24" × 36"</p>
+          <p class="product-price">$410</p>
+          <div class="product-actions">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <a href="https://buy.stripe.com/test_placeholder5" class="stripe-buy-btn" target="_blank">Buy Now with Stripe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6: Modern Mosaic -->
+    <div class="artwork-card product-card" data-animate>
+      <div class="artwork-frame">
+        <img src="{{ '/assets/images/art6.svg' | relative_url }}" alt="Modern Mosaic" class="artwork-image">
+        <div class="artwork-info">
+          <h3 class="artwork-title">Modern Mosaic</h3>
+          <p class="product-medium">Digital Print on Canvas • 24" × 36"</p>
+          <p class="product-price">$350</p>
+          <div class="product-actions">
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <a href="https://buy.stripe.com/test_placeholder6" class="stripe-buy-btn" target="_blank">Buy Now with Stripe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <a class="cta-button" href="{{ '/gallery.html' | relative_url }}">View Gallery</a>
+    <a class="cta-button secondary" href="{{ '/' | relative_url }}">Back Home</a>
+  </div>
+
+  <!-- Stripe Setup Instructions -->
+  <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 3rem 0; border: 1px solid var(--accent);">
+    <h3 style="color: var(--accent); margin-bottom: 1rem;">💳 Stripe Payment Links Setup:</h3>
+    <ol style="color: var(--text-light); line-height: 1.8;">
+      <li>Create a <a href="https://stripe.com" target="_blank" style="color: var(--accent);">Stripe account</a></li>
+      <li>Go to <strong>Products</strong> → Create a product for each artwork with the prices shown</li>
+      <li>For each product, create a <strong>Payment Link</strong></li>
+      <li>Replace the placeholder URLs (<code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 3px;">https://buy.stripe.com/test_placeholder1</code>, etc.) in the "Buy Now with Stripe" buttons with your actual Stripe Payment Links</li>
+      <li>Set the success URL to: <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 3px;">{{ site.url }}/success.html</code></li>
+      <li>Test with Stripe test card: <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 3px;">4242 4242 4242 4242</code></li>
+    </ol>
+    <p style="color: var(--text-light); margin-top: 10px;">
+      <strong>Current Status:</strong> Using placeholder Stripe links. Replace with your actual Payment Links to enable purchases.
+    </p>
+    <p style="color: var(--text-light); margin-top: 10px;">
+      <strong>Cart Feature:</strong> The shopping cart stores items locally and provides a convenient way to browse. 
+      Actual checkout is handled through individual Stripe Payment Links for each artwork.
+    </p>
+  </div>
+</div>
+
+<!--
+  STRIPE INTEGRATION INSTRUCTIONS:
+  
+  To set up Stripe Payment Links for your artwork:
+  
+  1. Sign up for Stripe at https://stripe.com
+  2. Navigate to Products in your Stripe Dashboard
+  3. Create 6 products matching your artworks:
+     - Abstract Dreams: $450
+     - Geometric Harmony: $380
+     - Prismatic Vision: $520
+     - Flowing Energy: $290
+     - Celestial Rings: $410
+     - Modern Mosaic: $350
+  
+  4. For each product:
+     - Click "Create payment link"
+     - Set the success URL to your site's success page
+     - Copy the generated payment link
+  
+  5. Replace the placeholder URLs in this file:
+     - Find: https://buy.stripe.com/test_placeholder1
+     - Replace with: your actual Stripe payment link
+     - Repeat for all 6 products
+  
+  6. Test mode: Use test card 4242 4242 4242 4242
+  7. Go live: Toggle to Production mode in Stripe Dashboard
+-->

@@ -1,50 +1,28 @@
 ---
-layout: none
----
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment Success - Visions in Paint LLC</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-</head>
-<body>
-
-<header>
-  <h1>🎨 Visions in Paint LLC</h1>
-  <nav>
-    <a href="{{ site.baseurl }}/index.html">Home</a>
-    <a href="{{ site.baseurl }}/gallery.html">Gallery</a>
-    <a href="{{ site.baseurl }}/shop.html">Shop</a>
-  </nav>
-</header>
 layout: default
 title: Payment Success - Visions in Paint LLC
 ---
 
-<div class="container">
-  <div class="success-container">
-    <h1>✅ Payment Successful!</h1>
-    <p>Thank you for supporting Visions in Paint LLC.</p>
-    <p style="color: #666; font-size: 1.1em;">Your purchase helps support independent artists and brings beauty into the world.</p>
-    
-    <div style="margin: 40px 0;">
-      <svg width="150" height="150" viewBox="0 0 150 150" style="margin: 20px auto; display: block;">
-        <circle cx="75" cy="75" r="70" fill="none" stroke="#27ae60" stroke-width="4"/>
-        <path d="M 45 75 L 65 95 L 105 55" fill="none" stroke="#27ae60" stroke-width="8" stroke-linecap="round"/>
-      </svg>
-    </div>
-    
-    <p style="font-size: 1em; color: #666; margin: 20px 0;">
-      You will receive a confirmation email shortly with your order details.
-    </p>
-    
-    <div style="margin-top: 40px;">
-      <a class="btn" href="{{ site.baseurl }}/index.html">Return Home</a>
-      <a class="btn btn-secondary" href="{{ site.baseurl }}/gallery.html">View More Art</a>
-      <a class="btn" href="{{ '/' | relative_url }}">Return Home</a>
-      <a class="btn btn-secondary" href="{{ '/gallery.html' | relative_url }}">View More Art</a>
-    </div>
+<div class="success-container">
+  <svg class="success-checkmark" width="150" height="150" viewBox="0 0 150 150">
+    <circle cx="75" cy="75" r="70" fill="none" stroke="#c9a96e" stroke-width="4"/>
+    <path d="M 45 75 L 65 95 L 105 55" fill="none" stroke="#c9a96e" stroke-width="8" stroke-linecap="round"/>
+  </svg>
+  
+  <h1>✅ Payment Successful!</h1>
+  
+  <p style="font-size: 1.2rem; margin: 1.5rem 0;">Thank you for supporting Visions in Paint LLC</p>
+  
+  <p style="color: var(--accent); font-size: 1.1em; margin: 1rem 0;">
+    Your purchase helps support independent artists and brings beauty into the world.
+  </p>
+  
+  <p style="font-size: 1em; color: #999; margin: 2rem 0;">
+    You will receive a confirmation email shortly with your order details and shipping information.
+  </p>
+  
+  <div class="nav-buttons" style="margin-top: 3rem;">
+    <a class="cta-button" href="{{ '/' | relative_url }}">Return Home</a>
+    <a class="cta-button secondary" href="{{ '/gallery.html' | relative_url }}">View More Art</a>
   </div>
 </div>

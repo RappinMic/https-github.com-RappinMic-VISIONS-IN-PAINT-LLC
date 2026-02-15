@@ -1,71 +1,78 @@
 # 🎨 Visions in Paint LLC
 
-A stunning artistic-themed website for showcasing and selling original artwork, featuring influences from the great masters: Picasso, Salvador Dalí, and Leonardo da Vinci.
+A stunning **Art Gallery & Museum** themed website showcasing original artwork with a sophisticated 2026 design featuring modern animations, interactive elements, and a fully functional e-commerce store.
 
-## 🖼️ Artistic Design Philosophy
+## 🖼️ Museum-Inspired Design Philosophy
 
-This website embodies the essence of three legendary artists while maintaining modern web usability. The design incorporates:
+This website brings the elegance and atmosphere of a world-class art museum to the web with:
 
-### **Master Artist Influences**
-- **Picasso**: Bold, vibrant colors (cubist blues, yellows, reds) with geometric shapes and patterns
-- **Salvador Dalí**: Surreal and dreamlike elements with melting effects and mysterious gradients
-- **Leonardo da Vinci**: Classical elegance, symmetry, and the golden ratio (1.618) in proportions
+### **Museum Aesthetic**
+- **Dark, sophisticated color palette**: Deep charcoal (#1a1a1a), warm ivory (#f5f0e8), and museum gold (#c9a96e)
+- **Minimalist layouts**: Clean spaces that let the artwork breathe, like a real gallery wall
+- **Museum-style frames**: Artwork displayed with box-shadows and subtle inner borders that glow gold on hover
+- **Track lighting simulation**: Cursor spotlight effect creates a radial gradient that follows your mouse
 
-### **Typography**
-- **Cinzel & Playfair Display**: Classical serif fonts for da Vinci's Renaissance elegance
-- **Cormorant Garamond**: Sophisticated serif for body text with artistic flair
-- **Montserrat & Bebas Neue**: Bold geometric fonts for Picasso-inspired headers
-- Perfect blend of classical refinement and modern boldness
+### **Modern Typography (2026)**
+- **Playfair Display**: Elegant serif font for headings and titles
+- **Inter**: Clean, modern sans-serif for body text
+- Animated text entries with fade-slide-up effects
+- Careful letter-spacing and text-transform for an upscale feel
 
-### **Artistic Color Palette**
-- Picasso Blue (#0E4C92) - Bold primary tone
-- Dalí Gold (#D4AF37) - Surreal accent color
-- Picasso Red (#D71920) - Vibrant emphasis
-- Vinci Sepia (#704214) - Classical depth
-- Picasso Yellow (#FDB827) - Energetic highlight
-- Dalí Violet (#9B59B6) - Dreamlike mystery
-- Vinci Ivory (#FFFFF0) - Classical elegance
-
-### **Design Elements**
-- Geometric patterns inspired by Picasso's Cubism
-- Surreal melting effects and dreamlike animations from Dalí
-- Classical symmetry and golden ratio proportions from da Vinci
-- Bold geometric borders with vibrant artistic gradients
-- Dramatic shadows and depth for artistic dimension
-- Smooth transformations with perspective effects
-- Renaissance-inspired background textures
-- Classical frame overlays on gallery items
+### **2026 Animations & Graphics**
+- **Scroll-triggered reveals**: Artworks fade and slide into view as you scroll using IntersectionObserver
+- **Parallax scrolling**: Hero sections and exhibition banners move at different speeds for depth
+- **Hover micro-interactions**: Images scale up, brightness increases, and gold frames glow
+- **Animated CTA buttons**: Fill animations with pseudo-elements on hover
+- **Smooth scroll**: Site-wide smooth scrolling behavior
+- **Mobile-responsive**: Hamburger menu and touch-friendly interactions
 
 ## 🚀 Features
 
-- **Visually Striking Gallery** - 6 unique artworks with artistic presentation
-- **Master Artist Aesthetics** - Picasso, Dalí, and da Vinci influences throughout
-- **Dramatic Animations** - Surreal melting effects, geometric rotations, and golden ratio transitions
-- **Classical Typography** - Elegant serif fonts mixed with bold geometric typefaces
-- **Bold Artistic Colors** - Cubist blues, surreal golds, and Renaissance earth tones
-- **Geometric Patterns** - Picasso-inspired cubist shapes and angular designs
-- **Surreal Effects** - Dalí-inspired dreamlike animations and morphing shapes
-- **Golden Ratio Layout** - da Vinci's classical proportions and symmetry
-- **Responsive Design** - Seamless viewing on mobile, tablet, and desktop devices
-- **Smooth Perspective Effects** - Enhanced 3D transformations
-- **Stripe Payment Integration** - Secure payments using Stripe Payment Links
-- **Disqus Comments** - User feedback and engagement on gallery page
-- **Cross-Browser Compatible** - Works seamlessly across all modern browsers
-- **Static Website** - Fast loading with no backend required
-- **GitHub Pages Ready** - Easy deployment
+- **Art Gallery with Museum Frames** - 6 unique artworks with sophisticated presentation
+- **Fully Functional Store** - Shopping cart with localStorage persistence
+- **Stripe Integration** - Payment Links for secure checkout
+- **Disqus Comments** - Community engagement on gallery page
+- **Scroll Animations** - IntersectionObserver-powered reveals with staggered delays
+- **Parallax Effects** - Background images move slower than foreground
+- **Cursor Spotlight** - Radial gradient follows mouse for museum track lighting effect
+- **Shopping Cart Drawer** - Slide-in cart with add/remove items, quantity tracking
+- **Product Filtering** - Filter by price range and sort alphabetically
+- **Responsive Design** - Mobile-first with hamburger navigation
+- **Accessibility** - Focus-visible outlines and reduced-motion support
+- **Jekyll/GitHub Pages** - Static site generator for easy deployment
 
 ## 📸 Pages
 
-- **Home** (`index.html`) - Welcome page with featured artwork
-- **Gallery** (`gallery.html`) - Full art gallery with Disqus comments
-- **Shop** (`shop.html`) - Purchase artwork with Stripe integration
-- **Success** (`success.html`) - Payment confirmation page
+- **Home** (`index.html`) - Hero section, featured collection, parallax banner
+- **Gallery** (`gallery.html`) - Full art gallery with hover overlays and Disqus comments
+- **Shop** (`shop.html`) - E-commerce store with cart system and Stripe integration
+- **Success** (`success.html`) - Payment confirmation with animated checkmark
 
 ## ⚙️ Setup
 
-### Quick Start (Static Site)
+### Quick Start (GitHub Pages)
 
-Simply open `index.html` in a web browser or serve with any static file server:
+This site is configured for GitHub Pages deployment:
+
+1. Fork or clone this repository
+2. Enable GitHub Pages in repository Settings → Pages
+3. Set source to `main` branch, `/` (root)
+4. Your site will be live at `https://[username].github.io/[repo-name]/`
+
+### Local Development with Jekyll
+
+```bash
+git clone https://github.com/RappinMic/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC.git
+cd https-github.com-RappinMic-VISIONS-IN-PAINT-LLC
+bundle install
+bundle exec jekyll serve
+```
+
+Visit `http://localhost:4000` in your browser.
+
+### Static File Server (No Jekyll)
+
+You can also serve as a static site:
 
 ```bash
 # Using Python
@@ -78,86 +85,90 @@ npx http-server
 php -S localhost:8000
 ```
 
-Then visit `http://localhost:8000` in your browser.
-
-### Jekyll Setup (Optional)
-
-```bash
-git clone https://github.com/yourusername/visions-in-paint.git
-cd visions-in-paint
-bundle install
-bundle exec jekyll serve
-```
-
 ## 💳 Stripe Integration Setup
 
 1. Create a [Stripe account](https://stripe.com)
-2. Go to Products → Create products for each artwork
-3. Create Payment Links for each product
-4. Update the `STRIPE_PAYMENT_LINKS` object in `shop.html` with your links
-5. Test with Stripe test card: `4242 4242 4242 4242`
+2. Navigate to **Products** in your Dashboard
+3. Create products for each artwork with these prices:
+   - Abstract Dreams: $450
+   - Geometric Harmony: $380
+   - Prismatic Vision: $520
+   - Flowing Energy: $290
+   - Celestial Rings: $410
+   - Modern Mosaic: $350
+4. Create a **Payment Link** for each product
+5. Set success URL to: `https://[your-site]/success.html`
+6. Replace placeholder URLs in `shop.html` with your actual Payment Links
+7. Test with card: `4242 4242 4242 4242` (expires: any future date, CVC: any 3 digits)
 
-See detailed instructions in `shop.html`.
+See detailed instructions with HTML comments in `shop.html`.
 
 ## 💬 Disqus Comments Setup
 
 1. Create a [Disqus account](https://disqus.com)
-2. Register your site and get a shortname
-3. Replace `'visions-in-paint'` in `gallery.html` with your shortname
+2. Register your site and get your shortname
+3. Replace `'visions-in-paint'` in `gallery.html` with your shortname (line 82)
 
-See detailed instructions in `gallery.html`.
+See detailed instructions on the Gallery page.
 
 ## 🎨 Customization
 
 ### Colors
-Edit CSS variables in `assets/css/style.css` to customize the artistic color palette:
-- `--picasso-blue`: Bold primary tone (#0E4C92)
-- `--dali-gold`: Surreal accent color (#D4AF37)
-- `--picasso-red`: Vibrant emphasis (#D71920)
-- `--vinci-sepia`: Classical depth (#704214)
-- `--picasso-yellow`: Energetic highlight (#FDB827)
-- `--dali-violet`: Dreamlike mystery (#9B59B6)
+
+Edit CSS variables in `assets/css/style.css`:
+
+```css
+:root {
+  --bg-primary: #1a1a1a;      /* Dark charcoal */
+  --bg-secondary: #f5f0e8;    /* Warm ivory */
+  --accent: #c9a96e;          /* Museum gold */
+  --frame-border: #2a2a2a;    /* Frame color */
+}
+```
 
 ### Typography
-The site uses three font families for the artistic aesthetic:
-- **Cinzel & Playfair Display**: Classical elegance for da Vinci influence
-- **Cormorant Garamond**: Refined serif for body text
-- **Montserrat & Bebas Neue**: Bold geometric fonts for Picasso-inspired elements
+
+Google Fonts are loaded in `_layouts/default.html`:
+- **Playfair Display**: Headings and titles
+- **Inter**: Body text and UI elements
 
 ### Animations
-All animations are optimized for performance:
-- **Melting Dream**: Dalí-inspired surreal morphing effects
-- **Geometric Float**: Picasso-inspired cubist rotations
-- **Golden Ratio Transitions**: Classical da Vinci proportions in motion
-- **Perspective 3D**: Enhanced depth and dimension
-- **Artistic Pulse**: Continuous subtle enhancement on hover
+
+All animations can be customized in `assets/css/style.css`. Key animations:
+- `fadeSlideUp`: Hero section entrance
+- Scroll-triggered reveals with staggered delays
+- Hover effects on artwork frames
+- CTA button fill animations
 
 ### Images
-Replace SVG files in `assets/images/` with your own artwork. The artistic theme features:
-- Bold geometric patterns and cubist shapes
-- Surreal gradient backgrounds
-- Classical frame overlays
-- Dramatic artistic shadows
 
-### Content
-Update HTML files with your artwork details and descriptions
+Replace SVG files in `assets/images/` with your own artwork:
+- `art1.svg` through `art6.svg`
+- Maintain consistent naming for automatic integration
 
 ## 📁 Project Structure
 
 ```
 .
-├── index.html              # Home page
-├── gallery.html            # Gallery with comments
-├── shop.html               # Shop with Stripe
+├── index.html              # Home page with hero and featured collection
+├── gallery.html            # Gallery with Disqus comments
+├── shop.html               # Store with cart and Stripe integration
 ├── success.html            # Payment success page
+├── _config.yml             # Jekyll configuration
+├── _layouts/
+│   └── default.html        # Main layout template
+├── _includes/
+│   ├── header.html         # Site header with navigation
+│   └── footer.html         # Site footer
 ├── assets/
 │   ├── css/
-│   │   └── style.css      # Artistic styling
+│   │   └── style.css       # Complete museum theme styling
+│   ├── js/
+│   │   └── main.js         # Interactivity (cart, animations, etc.)
 │   └── images/
-│       ├── art1.svg       # Artwork images
-│       ├── art2.svg
+│       ├── art1.svg        # Artwork files
 │       └── ...
-├── _config.yml            # Jekyll config (optional)
+├── Gemfile                 # Jekyll dependencies
 └── README.md
 ```
 
@@ -165,6 +176,40 @@ Update HTML files with your artwork details and descriptions
 
 Visit the live site: [https://rappinmic.github.io/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC/](https://rappinmic.github.io/https-github.com-RappinMic-VISIONS-IN-PAINT-LLC/)
 
+## 🛠️ Technologies
+
+- **Jekyll** - Static site generator
+- **Vanilla JavaScript** - No frameworks needed
+- **CSS3** - Custom properties, Grid, Flexbox, animations
+- **IntersectionObserver API** - Scroll-triggered animations
+- **localStorage API** - Shopping cart persistence
+- **Stripe Payment Links** - Secure payment processing
+- **Disqus** - Comment system
+- **GitHub Pages** - Free hosting
+
+## 📱 Browser Support
+
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers (iOS Safari, Chrome Android)
+
+## ♿ Accessibility
+
+- Semantic HTML5 elements
+- ARIA labels on interactive elements
+- Focus-visible outlines for keyboard navigation
+- Reduced-motion media query support
+- Alt text on all images
+
 ## 📝 License
 
-© 2024 Visions in Paint LLC. All rights reserved.
+© 2026 Visions in Paint LLC. All rights reserved.
+
+## 🤝 Contributing
+
+This is a personal art portfolio site. For issues or suggestions, please open an issue on GitHub.
+
+---
+
+**Built with passion for art and modern web design** 🎨✨
