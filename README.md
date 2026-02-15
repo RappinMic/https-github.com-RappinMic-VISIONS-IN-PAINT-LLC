@@ -1,53 +1,51 @@
 # 🎨 Visions in Paint LLC
 
-A stunning artistic-themed website for showcasing and selling original artwork, featuring influences from the great masters: Picasso, Salvador Dalí, and Leonardo da Vinci.
+A stunning artistic-themed website for showcasing and selling original artwork with a sophisticated paint studio aesthetic.
 
 ## 🖼️ Artistic Design Philosophy
 
-This website embodies the essence of three legendary artists while maintaining modern web usability. The design incorporates:
+This website embodies the spirit of a professional art gallery meets creative studio, featuring rich, harmonious colors and paint-themed design elements throughout.
 
-### **Master Artist Influences**
-- **Picasso**: Bold, vibrant colors (cubist blues, yellows, reds) with geometric shapes and patterns
-- **Salvador Dalí**: Surreal and dreamlike elements with melting effects and mysterious gradients
-- **Leonardo da Vinci**: Classical elegance, symmetry, and the golden ratio (1.618) in proportions
+### **Sophisticated Color Palette**
+- **Teal (#008080)** - Primary accent color bringing freshness and creativity
+- **Ultramarine Blue (#120A8F)** - Bold, deep highlights for dramatic impact
+- **Indian Summer (#D2691E)** - Warm burnt orange adding artistic warmth
+- **Gold (#FFD700)** - Premium details and highlights for elegance
+- **Burnt Umber (#8B4513)** - Rich earth tones grounding the design
+- **Dark Plum (#5C3A6B)** - DARKER plum providing depth and sophistication
+- **Grape Leaves (#3C3D37)** - Sophisticated dark accents for contrast
+- **Canvas White (#F8F5F0)** - Warm off-white like artist canvas
+- **Cream (#FFF8DC)** - Soft backgrounds for comfort
 
 ### **Typography**
-- **Cinzel & Playfair Display**: Classical serif fonts for da Vinci's Renaissance elegance
-- **Cormorant Garamond**: Sophisticated serif for body text with artistic flair
-- **Montserrat & Bebas Neue**: Bold geometric fonts for Picasso-inspired headers
-- Perfect blend of classical refinement and modern boldness
+- **Playfair Display**: Elegant serif for headings with artistic flair
+- **Cinzel**: Classical serif for titles and branding
+- **Lato**: Clean, modern sans-serif for body text
+- **Great Vibes**: Artistic cursive script for special accents
+- Perfect balance of elegance and readability
 
-### **Artistic Color Palette**
-- Picasso Blue (#0E4C92) - Bold primary tone
-- Dalí Gold (#D4AF37) - Surreal accent color
-- Picasso Red (#D71920) - Vibrant emphasis
-- Vinci Sepia (#704214) - Classical depth
-- Picasso Yellow (#FDB827) - Energetic highlight
-- Dalí Violet (#9B59B6) - Dreamlike mystery
-- Vinci Ivory (#FFFFF0) - Classical elegance
-
-### **Design Elements**
-- Geometric patterns inspired by Picasso's Cubism
-- Surreal melting effects and dreamlike animations from Dalí
-- Classical symmetry and golden ratio proportions from da Vinci
-- Bold geometric borders with vibrant artistic gradients
-- Dramatic shadows and depth for artistic dimension
-- Smooth transformations with perspective effects
-- Renaissance-inspired background textures
-- Classical frame overlays on gallery items
+### **Paint-Themed Design Elements**
+- 🎨 **Paint Brush Icons** - Animated brush strokes in header and footer
+- 💧 **Paint Drop Effects** - Decorative paint droplets throughout
+- 🖼️ **Artist Palette Icons** - Gallery and artwork markers
+- **Canvas-Style Borders** - Textured borders mimicking canvas frames
+- **Artistic Gradients** - Smooth color transitions with paint-flow animations
+- **Hover Effects** - Interactive transformations on gallery items and buttons
+- **Professional Gallery Layout** - Grid system with sophisticated spacing
+- **Creative Flourishes** - Subtle decorative elements enhancing the artistic feel
 
 ## 🚀 Features
 
-- **Visually Striking Gallery** - 6 unique artworks with artistic presentation
-- **Master Artist Aesthetics** - Picasso, Dalí, and da Vinci influences throughout
-- **Dramatic Animations** - Surreal melting effects, geometric rotations, and golden ratio transitions
-- **Classical Typography** - Elegant serif fonts mixed with bold geometric typefaces
-- **Bold Artistic Colors** - Cubist blues, surreal golds, and Renaissance earth tones
-- **Geometric Patterns** - Picasso-inspired cubist shapes and angular designs
-- **Surreal Effects** - Dalí-inspired dreamlike animations and morphing shapes
-- **Golden Ratio Layout** - da Vinci's classical proportions and symmetry
+- **Visually Striking Gallery** - 6 unique artworks with professional presentation
+- **Paint Studio Aesthetic** - Rich color palette with sophisticated paint-themed design
+- **Artistic Animations** - Smooth transitions, hover effects, and paint-flow animations
+- **Modern Typography** - Elegant serif fonts balanced with clean sans-serif
+- **Sophisticated Colors** - Harmonious palette of teal, plum, burnt umber, and gold
+- **Paint-Themed Icons** - 🎨 Brush, 💧 drops, and 🖼️ palette icons throughout
+- **Canvas-Style Borders** - Professional framing effects on content containers
+- **Creative Flourishes** - Decorative elements enhancing the artistic atmosphere
 - **Responsive Design** - Seamless viewing on mobile, tablet, and desktop devices
-- **Smooth Perspective Effects** - Enhanced 3D transformations
+- **Interactive Elements** - Engaging hover effects with smooth transformations
 - **Stripe Payment Integration** - Secure payments using Stripe Payment Links
 - **Disqus Comments** - User feedback and engagement on gallery page
 - **Cross-Browser Compatible** - Works seamlessly across all modern browsers
@@ -111,33 +109,38 @@ See detailed instructions in `gallery.html`.
 
 ### Colors
 Edit CSS variables in `assets/css/style.css` to customize the artistic color palette:
-- `--picasso-blue`: Bold primary tone (#0E4C92)
-- `--dali-gold`: Surreal accent color (#D4AF37)
-- `--picasso-red`: Vibrant emphasis (#D71920)
-- `--vinci-sepia`: Classical depth (#704214)
-- `--picasso-yellow`: Energetic highlight (#FDB827)
-- `--dali-violet`: Dreamlike mystery (#9B59B6)
+- `--teal`: Primary accent (#008080)
+- `--ultramarine`: Bold highlights (#120A8F)
+- `--indian-summer`: Warm burnt orange (#D2691E)
+- `--gold`: Premium details (#FFD700)
+- `--burnt-umber`: Rich earth tones (#8B4513)
+- `--dark-plum`: Darker plum complement (#5C3A6B)
+- `--grape-leaves`: Sophisticated dark accents (#3C3D37)
+- `--canvas-white`: Warm off-white (#F8F5F0)
+- `--cream`: Soft cream backgrounds (#FFF8DC)
 
 ### Typography
-The site uses three font families for the artistic aesthetic:
-- **Cinzel & Playfair Display**: Classical elegance for da Vinci influence
-- **Cormorant Garamond**: Refined serif for body text
-- **Montserrat & Bebas Neue**: Bold geometric fonts for Picasso-inspired elements
+The site uses elegant font families for the artistic aesthetic:
+- **Playfair Display**: Elegant serif for headings with artistic character
+- **Cinzel**: Classical serif for titles and branding elements
+- **Lato**: Clean, modern sans-serif for body text
+- **Great Vibes**: Artistic cursive script for special decorative elements
 
 ### Animations
 All animations are optimized for performance:
-- **Melting Dream**: Dalí-inspired surreal morphing effects
-- **Geometric Float**: Picasso-inspired cubist rotations
-- **Golden Ratio Transitions**: Classical da Vinci proportions in motion
-- **Perspective 3D**: Enhanced depth and dimension
-- **Artistic Pulse**: Continuous subtle enhancement on hover
+- **Paint Flow**: Animated gradients with smooth color transitions
+- **Brush Stroke**: Rotating paint brush animations in header
+- **Drop Paint**: Subtle paint droplet animations on hover
+- **Canvas Border**: Layered border effects mimicking canvas frames
+- **Fade In Up**: Smooth entrance animations for gallery items
+- **Hover Transformations**: Elegant scaling and shadow effects
 
 ### Images
 Replace SVG files in `assets/images/` with your own artwork. The artistic theme features:
-- Bold geometric patterns and cubist shapes
-- Surreal gradient backgrounds
-- Classical frame overlays
-- Dramatic artistic shadows
+- Professional gallery presentation with hover effects
+- Canvas-style borders and elegant frames
+- Paint-themed decorative icons
+- Sophisticated color-coordinated borders
 
 ### Content
 Update HTML files with your artwork details and descriptions
